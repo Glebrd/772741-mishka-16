@@ -1,12 +1,92 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
 
-  </body>
-</html>
+<body class="index">
+  <header class="header index__header">
+    <nav class="main-nav index__main-nav">
+      <img class="main-nav__logo logo" src="http://placehold.it/86x35" alt="Магазин Мишка - логотип">
+      <button class="burger-menu-btn"></button>
+      <ul class="site-navigation main-nav__site-navigation">
+        <li class="site-navigation__item"><a href="#" class="site-navigation__link">Каталог товаров</a></li>
+        <li class="site-navigation__item"><a href="#" class="site-navigation__link">Вязание на заказ</a></li>
+        <li class="site-navigation__item"><a href="#" class="site-navigation__link site-navigation__link--search">Поиск
+            по сайту</a></li>
+        <li class="site-navigation__item"><a href="#" class="site-navigation__link site-navigation__link--cart">Корзина:
+            пока пуста</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="products">
+      <h1 class="products__title">Милые штуки ручной работы для дома</h1>
+      <a href="#" class="products-category">Предметы интерьера</a>
+      <a href="#" class="products-category">Детские игрушки</a>
+    </section>
+    <section class="deal-of-the-week">
+      <h2 class="deal-of-the-week__title">Вязаные корзинки</h2>
+      <span class="deal-of-the-week__subtitle">Товар недели</span>
+      <p class="deal-of-the-week__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
+        размерах.</p>
+      <table class="features-table">
+        <tr>
+          <th class="features-header">Цвет:</th>
+          <td class="features-definition">«Тиффани»/серый</td>
+        </tr>
+        <tr>
+          <th class="features-header">Диаметр:</th>
+          <td class="features-definition">25 см</td>
+        </tr>
+        <tr>
+          <th class="features-header">Высота:</th>
+          <td class="features-definition">15 см</td>
+        </tr>
+      </table>
+      <img src="http://placehold.it/260x315" alt="Вязаные корзинки" class="deal-of-the-week__picture">
+      <span class="deal-of-the-week__price">Цена: 990 руб.</span>
+      <a href="#" class="button deal-of-the-week__btn">Заказать</a>
+    </section>
+    <section class="about-us">
+      <h2 class="about-us__title">Коротко о нас:</h2>
+      <span class="about-us__text about-us__text--flower">
+        Экологически чистые материалы
+      </span>
+      <span class="about-us__text about-us__text--money">
+        Скандинавский стиль по российской цене
+      </span>
+      <span class="about-us__text about-us__text--heart">
+        Увеличивает лайки на фотографиях
+      </span>
+      <span class="about-us__text about-us__text--thread">
+        Связано вручную с любовью и умилением
+      </span>
+      <span class="about-us__text about-us__text--rocket">
+        Поддержка отечественного производителя
+      </span>
+      <span class="about-us__text about-us__text--gift">
+        Поставляется в подарочной упаковке
+      </span>
+    </section>
+  </main>
+  <footer class="footer index__footer">
+    <ul class="footer__socials socials-list">
+      <li class="socials-list__item">
+        <a href="#" aria-label="Мы в Инстаграме" class="socials-list__button socials-list__button--instagram"></a>
+      </li>
+      <li class="socials-list__item">
+        <a href="#" aria-label="Мы в Фэйсбуке" class="socials-list__button socials-list__button--facebook"></a>
+      </li>
+      <li class="socials-list__item">
+        <a href="#" aria-label="Мы в Твиттере" class="socials-list__button socials-list__button--twitter"></a>
+      </li>
+    </ul>
+    <div class="developer footer__developer">
+      <a class="developer__about" href="https://htmlacademy.ru/intensive/adaptive"
+        aria-label="Ссылка на лендинг интенсива «Профессиональный HTML и CSS, уровень 2»">Разработано</a>
+    </div>
+  </footer>
+</body>
