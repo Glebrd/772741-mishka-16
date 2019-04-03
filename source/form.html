@@ -52,23 +52,24 @@
         <fieldset class="order__name">
           <legend class="order__name-title">ФИО</legend>
           <label>Имя: <input class="order__first-name" type="text" name="first-name"
-              placeholder="Введите ваше имя"></label>
+              placeholder="Введите ваше имя*"></label>
           <label>Фамилия: <input class="order__last-name" type="text" name="last-name"
-              placeholder="Укажите фамилию"></label>
+              placeholder="Укажите фамилию*"></label>
           <label>Отчество: <input class="order__middle-name" type="text" name="middle-name"
               placeholder="Отчество, если желаете"></label>
         </fieldset>
         <fieldset class="order__phone">
           <legend class="order__phone-title">Тел</legend>
-          <input class="order__phone-number" type="tel" name="phone">
+          <input class="order__phone-number" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
         </fieldset>
         <fieldset class="order__email">
           <legend class="order__email-title">E-mail</legend>
-          <input class="order__email-address" type="email" name="mail">
+          <input class="order__email-address" type="email" name="mail" placeholder="Отчество, если желаете">
         </fieldset>
         <fieldset class="order__additional">
           <legend class="order__additional-title">Доп</legend>
-          <textarea class="order__additional-text" name="additional-text"></textarea>
+          <textarea class="order__additional-text" name="additional-text"
+            placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
         <span class="order__required">*Поля обязательны для заполнения</span>
         <button type="submit" class="order__button button">Отправить заказ</button>
