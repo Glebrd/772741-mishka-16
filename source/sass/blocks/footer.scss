@@ -1,0 +1,18 @@
+.footer {
+  min-height: 160px;
+}
+
+.footer__socials {
+  list-style: none;
+}
+
+.developer__about {
+  display: block;
+  color: $color;
+  font-family: $font;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 18px;
+  padding: 109px 126px 31px 69px;
+  background-color: $bg-color;
+}

@@ -3,7 +3,10 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <title>HTML Academy: Мишка</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
 </head>
 
 <body class="catalog">
@@ -27,29 +30,36 @@
       <ul class="goods__list">
         <li class="goods__item">
           <img class="goods__img" src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик">
-          <h3 class="goods__title">Зайчик-попрыгайчик</h3>
-          <p class="goods__info">Рост 30 см, вес 200 г</p>
-          <span class="goods__price">1 200 руб.</span>
+          <div class="goods__wrap">
+            <h3 class="goods__title">Зайчик-попрыгайчик</h3>
+            <p class="goods__info">Рост 30 см, вес 200 г</p>
+            <span class="goods__price">1 200 руб.</span>
+          </div>
         </li>
         <li class="goods__item">
-          <img class="goods__img" src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик">
-          <h3 class="goods__title">Корзинка для белья</h3>
-          <p class="goods__info">Диаметр 15 см, высота 10 см</p>
-          <span class="goods__price">690 руб.</span>
+          <img class="goods__img" src="http://placehold.it/260x195" alt="Корзинка для белья">
+          <div class="goods__wrap">
+            <h3 class="goods__title">Корзинка для белья</h3>
+            <p class="goods__info">Диаметр 15 см, высота 10 см</p>
+            <span class="goods__price">690 руб.</span>
+          </div>
         </li>
         <li class="goods__item">
-          <img class="goods__img" src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик">
-          <h3 class="goods__title">Большая корзинка для игрушек</h3>
-          <p class="goods__info">Диаметр 30 см, высота 30 см</p>
-          <span class="goods__price">1 500 руб.</span>
+          <img class="goods__img" src="http://placehold.it/260x195" alt="Большая корзинка для игрушек">
+          <div class="goods__wrap">
+            <h3 class="goods__title">Большая корзинка для игрушек</h3>
+            <p class="goods__info">Диаметр 30 см, высота 30 см</p>
+            <span class="goods__price">1 500 руб.</span>
+          </div>
         </li>
       </ul>
     </section>
     <section class="production-process">
       <h2 class="production-process__header">Процесс
-          производства</h2>
+        производства</h2>
       <div class="production-process__video-container"></div>
-      <p class="production-process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      <p class="production-process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
+        как появляются наши товары.</p>
       <a href="#" class="button production-process__btn">Сделать заказ</a>
     </section>
   </main>

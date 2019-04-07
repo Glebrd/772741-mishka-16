@@ -1,0 +1,62 @@
+.deal-of-the-week {
+  @include wrapper;
+  font-family: $font;
+  padding: 30px 35px 35px 32px;
+}
+
+.deal-of-the-week__title {
+  display: block;
+  color: $color;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 0;
+}
+
+.deal-of-the-week__subtitle {
+  color: #63d1bb;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-top: 12px;
+}
+
+.deal-of-the-week__text {
+  color: #444444;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 30px;
+}
+
+.deal-of-the-week__features-table {
+  color: #444444;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 40px;
+  
+}
+
+.deal-of-the-week__features-header {
+  text-align-last: left;
+  font-weight: 400;
+
+}
+.deal-of-the-week__features-definition{
+  padding-left: 30px;
+ 
+}
+.deal-of-the-week__price{
+  display: block;
+  color: #444444;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 30px 60px 0 60px;
+}
+.deal-of-the-week__btn{
+  padding: 20px 85px;
+  width: 100%;
+  margin-top: 48px;
+}
