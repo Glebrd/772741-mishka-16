@@ -1,0 +1,48 @@
+.contacts__wrapper {
+  @include wrapper;
+  font-family: $font;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.contacts__title {
+  margin: 0;
+}
+
+.contacts__type {
+  color: #444444;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.contacts__email {
+  display: inline-block;
+  margin-left: 25px;
+  font-size: 15px;
+  color: #444444;
+  border-bottom: 1px solid #62d1ba;
+  line-height: 30px;
+}
+
+.contacts__address {
+  font-style: normal;
+  color: #444444;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  width: 150px;
+}
+
+.contacts__map-wrapper {
+  width: 100%;
+}
+
+.contacts__map {
+  width: 100%;
+}
+
+.contacts__btn {
+  padding: 19px 53px;
+  margin-left: 30px;
+}

@@ -1,0 +1,32 @@
+@mixin wrapper {
+  min-width: 320px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media (min-width: $breakpoint-tablet) {
+    min-width: 768px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    min-width: auto;
+    width: 100%;
+    max-width: 1300px;
+    padding-left: 1px;
+    padding-right: 50px;
+    margin: 0 auto;
+  }
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: "") {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+@mixin list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

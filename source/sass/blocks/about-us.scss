@@ -1,0 +1,17 @@
+.about-us {
+  @include wrapper;
+  font-family: $font;
+}
+
+.about-us__list {
+  @include list-reset;
+}
+
+.about-us__item {
+  display: block;
+  min-height: 98px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  padding-top: 56px;
+}

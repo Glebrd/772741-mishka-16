@@ -1,0 +1,36 @@
+.feedback {
+  @include wrapper;
+  font-family: $font;
+  padding-bottom: 45px;
+}
+
+.feedback__title {
+  margin-top: 61px;
+}
+
+.feedback__text {
+  color: #444444;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.feedback__name {
+  display: block;
+  margin-top: 45px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.feedback__tag {
+  display: block;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 35px;
+}
+
+.feedback__btn-write {
+  padding: 20px 80px;
+  margin-top: 57px;
+}
