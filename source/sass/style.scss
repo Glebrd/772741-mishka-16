@@ -1,6 +1,8 @@
-@import "general/mixins.scss";
-@import "general/variables.scss";
+@import "general/normalize.scss";
 @import "general/fonts.scss";
+@import "general/variables.scss";
+@import "general/mixins.scss";
+@import "general/common.scss";
 @import "blocks/index.scss";
 @import "blocks/header.scss";
 @import "blocks/products.scss";
@@ -12,5 +14,5 @@
 @import "blocks/goods.scss";
 @import "blocks/button.scss";
 @import "blocks/production-process.scss";
-@import "general/common.scss";
-@import "general/normalize.scss";
+@import "blocks/order.scss";
+@import "blocks/title.scss";

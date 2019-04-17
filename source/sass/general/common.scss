@@ -1,8 +1,34 @@
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
+
+// body>* {
+//   outline: 1px solid red;
+// }
+
+// body>*>* {
+//   outline: 1px solid green;
+// }
+
+// body>*>*>* {
+//   outline: 1px solid blue;
+// }
+
+// body>*>*>*>* {
+//   outline: 1px solid blueviolet;
+// }
+
+// body>*>*>*>*>* {
+//   outline: 1px solid yellow;
+// }
 
 html {
   box-sizing: border-box;
@@ -26,4 +52,5 @@ a {
 
 img {
   max-width: 100%;
+  height: auto;
 }
