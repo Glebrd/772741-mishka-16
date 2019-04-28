@@ -3,7 +3,6 @@ header {
   min-height: 55px;
 }
 
-
 .header__site-navigation {
   position: relative;
 
@@ -19,6 +18,7 @@ header {
   margin-left: 86px;
   width: 86px;
   height: 35px;
+  display: block;
 }
 
 .header__promos-list {
@@ -34,6 +34,15 @@ header {
   position: absolute;
   top: 30px;
   left: 31px;
+  opacity: 0.2;
+  // fill: rgb(0, 0, 0);
+}
+
+
+.header__site-functions-link--search:hover .header__site-functions-link--search-icon,
+.header__site-functions-link--cart:hover .header__site-functions-link--cart-icon {
+  fill: #63d1bb;
+  opacity: 1;
 }
 
 // popup menu mobile
@@ -136,6 +145,14 @@ header {
 // end of popup menu mobile
 
 @media (min-width: $tablet-width) {
+  .header__site-navigation {
+    padding-right: 30px;
+  }
+
+  a.header__site-functions-link--cart {
+    padding-right: 20px;
+  }
+
   .header__logo {
     margin-left: 0;
     width: 113px;
@@ -173,7 +190,8 @@ header {
     font-weight: normal;
     line-height: 1.6;
     color: #444444;
-    margin-top: -5px;
+    // margin-top: -5px;
+    margin-bottom: 5px;
     display: block;
     margin-left: 10px;
     order: 6;
@@ -222,7 +240,7 @@ header {
 
   .header__site-functions-item--cart {
     order: 2;
-    width: 265px;
+    min-width: 265px;
   }
 
   .header__site-functions-item--cart a {
@@ -252,16 +270,16 @@ header {
   }
 
   .site-navigation__link--knitting {
-    padding-left: 36px;
+    margin-left: 36px;
     padding-top: 0x;
     display: block;
-    margin-top: -6px;
+    margin-top: 0;
   }
 
   .site-navigation__link--catalog {
     padding-top: 0;
     display: block;
-    margin-top: -6px;
+    margin-top: 0;
   }
 
 
@@ -271,9 +289,34 @@ header {
     top: 37px;
     left: 31px;
   }
+
+  .header__delivery {
+    margin-right: 20px;
+    margin-bottom: 12px;
+  }
+
 }
 
 @media (min-width: $desktop-width) {
+
+  .header__site-navigation {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .header__delivery {
+    margin-right: 20px;
+    margin-bottom: 12px;
+  }
+
+  .header__promos-link--new-arrivals {
+    margin-left: 20px;
+  }
+
+  .header__promos-link {
+    margin-top: 3px;
+  }
+
   .site-navigation__link--knitting {
     padding-top: 0x;
     display: block;
@@ -287,6 +330,9 @@ header {
     display: block;
     margin-top: 0;
     min-height: 92px;
+    padding-left: 20px;
+    padding-right: 37px;
+    // min-width: 205px;
   }
 
 
@@ -314,12 +360,12 @@ header {
     color: $color;
     min-width: 159px;
     display: block;
-    padding: 18px 0 10px 0;
-    padding-top: 0;
+    margin-bottom: 10px;
   }
 
   .header__promos-link--sale {
-    padding-left: 60px;
+    margin-left: 60px;
+    min-width: 100px;
   }
 
   .header__site-navigation-list {
@@ -331,7 +377,7 @@ header {
   }
 
   .header__site-navigation-item--catalog {
-    width: 185px;
+    min-width: 185px;
   }
 
   .header__site-functions-item--search {
@@ -358,11 +404,16 @@ header {
     font-size: 17px;
     display: block;
     min-width: 150px;
+    margin-left: 0;
   }
 
   .header__site-navigation-item--catalog a {
     padding-top: 32px;
     font-size: 17px;
     display: block;
+  }
+
+  a.header__site-functions-link--cart {
+    padding-right: 23px;
   }
 }

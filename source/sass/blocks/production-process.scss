@@ -1,25 +1,66 @@
 .production-process {
+  @include wrapper;
   font-family: $font;
   min-height: 503px;
   border: 1px solid #ececec;
   background-color: #ffffff;
+  margin-top: 30px;
+  margin-bottom: 55px;
   padding: 0;
-  margin: 0 30px;
+  max-width: 260px;
+  // margin: 30px 30px 55px 30px;
+
 }
 
 .production-process__header {
   margin: 0;
-  padding: 29px 43px 29px 91px;
+  padding: 21px 43px 25px 91px;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
+  position: relative;
+}
+
+.production-process__icon {
+  fill: #63d1bb;
+  position: absolute;
+  top: 28px;
+  left: 33px;
 }
 
 .production-process__video-container {
   background-color: #cbfaf2;
-  min-width: 260px;
-  min-height: 150px;
+  min-width: 258px;
+  min-height: 148px;
+  background-size: cover;
+  background-image: url(../img/video-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+
+}
+
+.production-process__play-btn {
+  position: absolute;
+  width: 101px;
+  height: 77px;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -39px;
+  background-color: transparent;
+  background-image: url(../img/icon-play.svg);
+  background-repeat: no-repeat;
   background-size: contain;
+  border: 0;
+
+  &:hover {
+    transform: scale(1.2, 1.2)
+  }
+
+  &:active {
+    transform: scale(0.8, 0.8);
+    opacity: 0.3;
+  }
 }
 
 .production-process__text {
@@ -27,11 +68,109 @@
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
-  margin: 34px 40px 30px 34px;
+  margin: 30px 40px 22px 34px;
 }
 
 .production-process__btn {
-  margin: 34px;
-  padding: 18px 22px;
+  display: block;
+  margin: 0px 32px;
+  padding: 18px 22px 16px;
+  width: 196px;
   // margin: 27px;
+}
+
+@media (min-width: $tablet-width) {
+  section.production-process {
+    display: flex;
+    flex-direction: column;
+    // border: 0;
+    // margin: 0 50px 59px;
+    margin-bottom: 59px;
+    width: 668px;
+    min-width: 668px;
+    padding: 0;
+  }
+
+  .production-process__video-container {
+    order: -1;
+    min-width: 668px;
+    min-height: 455px;
+    background-size: cover;
+    background-image: url(../img/video-tablet@1x.jpg);
+
+  }
+
+  .production-process__header {
+    font-size: 20px;
+    padding: 38px 0 32px 107px;
+  }
+
+  .production-process__icon {
+    top: 33px;
+    left: 43px;
+  }
+
+  .production-process__text {
+    font-size: 15px;
+    margin: 0 auto;
+    padding: 0 42px 0 40px;
+    line-height: 30px;
+  }
+
+  .production-process__btn {
+    margin: 34px 42px 46px;
+    padding: 18px 22px 16px;
+    width: 584px;
+    text-align: center;
+
+  }
+}
+
+@media (min-width: $desktop-width) {
+  section.production-process {
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
+    width: 1050px;
+    min-width: 1050px;
+    max-width: 1050px;
+  }
+
+  .production-process__video-container {
+    width: 682px;
+    min-width: 682px;
+    height: 455px;
+  }
+
+
+  .production-process__text-wrap {
+
+    max-width: 366px;
+  }
+
+  .production-process__text {
+    padding-top: 174px;
+    padding-left: 78px;
+  }
+
+  .production-process__header {
+    position: absolute;
+    bottom: 359px;
+    left: 678px;
+    padding: 0;
+    margin-top: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  .production-process__icon {
+    top: -54px;
+    left: 3px;
+  }
+
+  .production-process__btn {
+    width: 230px;
+    padding: 14px 32px;
+    margin: 49px 57px 60px 80px;
+  }
 }

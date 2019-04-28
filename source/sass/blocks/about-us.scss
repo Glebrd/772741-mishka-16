@@ -1,4 +1,6 @@
 .about-us {
+  margin-top: 50px;
+  padding-top: 10px;
   @include wrapper;
   font-family: $font;
 }
@@ -13,5 +15,60 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
-  padding-top: 56px;
+  padding-top: 65px;
+  max-width: 250px;
+  padding-bottom: 18px;
+}
+
+.about-us__title {
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+
+.about-us__item {
+  position: relative;
+}
+
+.about-us__item-icon {
+  fill: #63d1bb;
+  position: absolute;
+  left: 5px;
+  top: 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .about-us__list {
+    column-count: 2;
+    width: 650px;
+  }
+
+  .about-us__item {
+    margin-bottom: 34px;
+    font-size: 20px;
+    max-width: 295px;
+  }
+
+  .about-us__title {
+    font-size: 43px;
+    line-height: 1.16;
+    margin-top: 68px;
+    margin-left: -3px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .about-us__list {
+    padding-left: 175px;
+    width: 857px;
+  }
+
+  .about-us__title {
+    margin-top: 92px;
+    padding-left: 175px;
+    font-size: 53px;
+    margin-bottom: 38px;
+  }
 }
