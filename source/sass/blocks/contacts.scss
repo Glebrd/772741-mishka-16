@@ -3,6 +3,7 @@
   font-family: $font;
   padding-top: 48px;
   padding-bottom: 35px;
+  width: 100%;
 }
 
 .contacts__map-wrapper {
@@ -52,10 +53,6 @@
   margin-bottom: 0;
 }
 
-.contacts__map-wrapper {
-  width: 100%;
-}
-
 .contacts__map {
   width: 100%;
 }
@@ -76,7 +73,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .contacts__wrapper {
     padding-bottom: 56px;
   }
@@ -123,6 +119,7 @@
     padding-top: 116px;
     position: relative;
     margin-left: auto;
+
     @include wrapper;
   }
 

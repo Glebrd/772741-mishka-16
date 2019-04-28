@@ -10,7 +10,6 @@
   font-size: 17px;
   margin: 0;
   color: $color;
-
 }
 
 .goods__list {
@@ -44,9 +43,6 @@
   font-weight: 400;
   line-height: 14px;
   margin-top: 13px;
- 
-
-
 }
 
 .goods__price {
@@ -57,6 +53,7 @@
   font-weight: 700;
   line-height: 24px;
   position: relative;
+
   &::before {
     @include pseudo;
     bottom: 45px;
@@ -87,9 +84,9 @@
       height: 11px;
       width: 100%;
       z-index: 55;
-      bottom: 0px;
+      bottom: 0;
       left: 0;
-      background-image: url(../img/bg-zigzag-fill.svg);
+      background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
       background-size: auto 22.7px;
       background-position: 0 0;
@@ -116,7 +113,6 @@
     min-height: 334px;
     display: flex;
     flex-direction: column;
-
   }
 
   .goods__title h3 {
@@ -125,11 +121,12 @@
 
   .goods__info {
     font-size: 15px;
-}
+  }
 
   .goods__price {
     font-size: 17px;
     margin-top: auto;
+
     &::before {
       @include pseudo;
       bottom: 45px;
@@ -186,13 +183,13 @@
   }
 
   .goods__info::after {
-    bottom: 0px;
+    bottom: 0;
     left: 0;
     width: 256px;
     position: absolute;
+
     @include pseudo;
     height: 1px;
     background-color: #ececec;
-
   }
 }

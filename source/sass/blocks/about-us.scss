@@ -1,6 +1,7 @@
 .about-us {
   margin-top: 50px;
   padding-top: 10px;
+
   @include wrapper;
   font-family: $font;
 }
@@ -18,16 +19,12 @@
   padding-top: 65px;
   max-width: 250px;
   padding-bottom: 18px;
+  position: relative;
 }
 
 .about-us__title {
   font-size: 25px;
   line-height: 1.2;
-}
-
-
-.about-us__item {
-  position: relative;
 }
 
 .about-us__item-icon {
@@ -59,7 +56,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .about-us__list {
     padding-left: 175px;
     width: 857px;

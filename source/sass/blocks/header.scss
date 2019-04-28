@@ -147,6 +147,10 @@ header {
 @media (min-width: $tablet-width) {
   .header__site-navigation {
     padding-right: 30px;
+    flex-wrap: wrap;
+    min-height: 157px;
+    margin-bottom: -70px;
+    align-items: flex-start;
   }
 
   a.header__site-functions-link--cart {
@@ -190,18 +194,11 @@ header {
     font-weight: normal;
     line-height: 1.6;
     color: #444444;
-    // margin-top: -5px;
-    margin-bottom: 5px;
     display: block;
     margin-left: 10px;
     order: 6;
-  }
-
-  .header__site-navigation {
-    flex-wrap: wrap;
-    min-height: 157px;
-    margin-bottom: -70px;
-    align-items: flex-start;
+    margin-right: 20px;
+    margin-bottom: 12px;
   }
 
   .header__site-navigation-list {
@@ -289,16 +286,9 @@ header {
     top: 37px;
     left: 31px;
   }
-
-  .header__delivery {
-    margin-right: 20px;
-    margin-bottom: 12px;
-  }
-
 }
 
 @media (min-width: $desktop-width) {
-
   .header__site-navigation {
     padding-left: 30px;
     padding-right: 30px;
@@ -315,6 +305,10 @@ header {
 
   .header__promos-link {
     margin-top: 3px;
+    color: $color;
+    min-width: 159px;
+    display: block;
+    margin-bottom: 10px;
   }
 
   .site-navigation__link--knitting {
@@ -354,13 +348,6 @@ header {
     font-family: $font;
     font-weight: bold;
     font-size: 15px;
-  }
-
-  .header__promos-link {
-    color: $color;
-    min-width: 159px;
-    display: block;
-    margin-bottom: 10px;
   }
 
   .header__promos-link--sale {
