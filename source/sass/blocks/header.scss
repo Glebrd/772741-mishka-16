@@ -71,6 +71,10 @@ header {
     display: block;
   }
 
+  .header__site-navigation--opened a.header__logo {
+    padding: 0;
+  }
+
   a.header__delivery {
     display: none;
   }
