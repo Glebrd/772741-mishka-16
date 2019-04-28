@@ -1,11 +1,26 @@
 .feedback {
   @include wrapper;
   font-family: $font;
-  padding-bottom: 45px;
+  padding-bottom: 43px;
+  position: relative;
+}
+
+.feedback::after {
+  @include pseudo;
+  height: 8px;
+  width: 100%;
+  z-index: 55;
+  bottom: -7px;
+  left: 0;
+  background: url("../img/bg-zigzag-line.svg") -3px 0;
+  background-repeat: repeat-x;
+  background-size: auto 6.5px;
+  transform: rotate(180deg);
 }
 
 .feedback__title {
-  margin-top: 61px;
+  margin-top: 39px;
+  margin-bottom: 25px;
 }
 
 .feedback__text {
@@ -17,7 +32,7 @@
 
 .feedback__name {
   display: block;
-  margin-top: 45px;
+  margin-top: 28px;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -27,10 +42,162 @@
   display: block;
   font-weight: 400;
   line-height: 30px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
+  font-size: 17px;
 }
 
-.feedback__btn-write {
+a.feedback__btn-write {
   padding: 20px 80px;
-  margin-top: 57px;
+  margin-top: 38px;
+  height: 53px;
+  display: block;
+  width: 260px;
+  padding-top: 16px;
+  padding-left: 79px;
+  margin-bottom: 0;
+}
+
+.feedback__btn {
+  width: 130px;
+  height: 52px;
+  display: inline-block;
+  border: solid 1px #ececec;
+  background: white;
+  position: relative;
+}
+
+.feedback__btn::before {
+  @include pseudo;
+  background: url("../img/icon-left-arrow.svg");
+  top: 13px;
+  left: 37px;
+  width: 50px;
+  height: 26px;
+}
+
+.feedback__btn--next::before {
+  @include pseudo;
+  background: url("../img/icon-right-arrow.svg");
+  left: 37px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    background: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+    padding-bottom: 70px;
+  }
+
+  .feedback__title {
+    margin-top: 29px;
+    padding-top: 77px;
+    font-size: 43px;
+    margin-left: -5px;
+    margin-bottom: 49px;
+    position: relative;
+  }
+
+  .feedback__text {
+    font-size: 17px;
+    margin-bottom: 58px;
+  }
+
+  .feedback__name {
+    margin-bottom: 4px;
+    font-size: 18px;
+  }
+
+  a.feedback__btn-write {
+    position: absolute;
+    top: 41px;
+    right: 50px;
+    width: 175px;
+    padding-left: 38px;
+  }
+
+  button.feedback__btn--prev {
+    position: absolute;
+    right: 115px;
+    bottom: 103px;
+    border: none;
+  }
+
+  button.feedback__btn--next {
+    position: absolute;
+    right: 27px;
+    bottom: 103px;
+    border: none;
+  }
+
+
+  .feedback::after {
+    @include pseudo;
+    height: 18px;
+    width: 100%;
+    z-index: 55;
+    bottom: -30px;
+    left: 0;
+    background: url("../img/bg-zigzag-line.svg") -40px 0;
+    background-repeat: repeat-x;
+    background-size: auto 15.5px;
+    // transform: rotate(180deg);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    margin-top: 36px;
+    padding-left: 175px;
+    width: 1050px;
+    padding-bottom: 110px;
+  }
+
+  a.feedback__btn-write {
+    position: absolute;
+    top: 41px;
+    right: 0;
+    width: 175px;
+    padding-left: 38px;
+  }
+
+  button.feedback__btn--prev {
+    position: absolute;
+    right: 63px;
+    bottom: 143px;
+    border: none;
+  }
+
+  button.feedback__btn--next {
+    position: absolute;
+    right: -24px;
+    bottom: 143px;
+    border: none;
+  }
+
+  .feedback__title {
+    font-size: 53px;
+    margin-top: 0;
+    padding-top: 69px;
+    margin-bottom: 47px;
+  }
+
+  .feedback__text {
+    font-size: 17px;
+    max-width: 770px;
+    margin-bottom: 38px;
+  }
+
+  .feedback::after {
+    @include pseudo;
+    height: 25px;
+    width: 100%;
+    z-index: 55;
+    bottom: -46px;
+    left: 0;
+    background: url("../img/bg-zigzag-line.svg") -55px 0;
+    background-repeat: repeat-x;
+    background-size: auto 21px;
+  }
 }

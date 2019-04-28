@@ -1,0 +1,66 @@
+.order__title {
+  font-family: $font;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 0;
+}
+
+.order__info {
+  @include wrapper;
+  display: block;
+  font-family: $font;
+  color: #444444;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 21px;
+  margin-bottom: 25px;
+}
+
+.order__form {
+  @include wrapper;
+}
+
+.order__type,
+.order__color,
+.order__name,
+.order__phone,
+.order__email,
+.order__additional {
+  font-family: $font;
+  border: 0;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.order__color-title,
+.order__name-title,
+.order__form-title,
+.order__email-title,
+.order__phone-title,
+.order__additional-title {
+  color: #63d1bb;
+  font-family: $font;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-left: -16px;
+}
+
+.order__type-radio,
+.order__color-checkbox {
+  padding-left: 48px;
+  display: block;
+}
+
+.order__type-radio {
+  margin-top: 26px;
+}
+
+.order__color {
+  margin-top: 33px;
+  padding-top: 25px;
+}

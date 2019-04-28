@@ -1,19 +1,19 @@
 @mixin wrapper {
-  min-width: 320px;
+  width: 320px;
   padding-left: 30px;
   padding-right: 30px;
+  margin: 0 auto;
 
-  @media (min-width: $breakpoint-tablet) {
+  @media (min-width: $tablet-width) {
     min-width: 768px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
-  @media (min-width: $breakpoint-desktop) {
+  @media (min-width: $desktop-width) {
     min-width: auto;
-    width: 100%;
-    max-width: 1300px;
-    padding-left: 1px;
+    width: 1150px;
+    padding-left: 50px;
     padding-right: 50px;
     margin: 0 auto;
   }
