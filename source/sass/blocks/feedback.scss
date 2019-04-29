@@ -88,6 +88,11 @@ a.feedback__btn-write {
     background-repeat: no-repeat;
     position: relative;
     padding-bottom: 70px;
+    background-size: 350px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   .feedback__title {
@@ -152,6 +157,10 @@ a.feedback__btn-write {
     padding-left: 175px;
     width: 1050px;
     padding-bottom: 110px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   a.feedback__btn-write {
