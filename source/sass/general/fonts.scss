@@ -3,6 +3,7 @@
   src: local("Open Sans"), local("Open-Sans"), url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
@@ -10,4 +11,5 @@
   src: local("Open Sans Bold"), local("Open Sans Extra-Bold"), url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/openansbold.woff") format("woff");
   font-style: bold;
   font-weight: 700;
+  font-display: swap;
 }
