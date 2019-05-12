@@ -47,7 +47,7 @@ header {
 
 // popup menu mobile
 
-@media (max-width: $mobile-width-only) {
+@include mobile-only {
   .header__site-navigation {
     display: block;
   }
@@ -66,8 +66,9 @@ header {
     font-weight: bold;
     line-height: 1.41;
     color: black;
-    padding-left: 75px;
-    padding-top: 26px;
+    padding: 26px 50px;
+    text-align: center;
+
     display: block;
   }
 
@@ -148,10 +149,11 @@ header {
 
 // end of popup menu mobil
 
-@media (min-width: $tablet-width) {
+@include tablet-up {
   .header__site-navigation {
     padding-right: 30px;
     flex-wrap: wrap;
+    height: 157px;
     min-height: 157px;
     margin-bottom: -70px;
     align-items: flex-start;
@@ -199,10 +201,10 @@ header {
     line-height: 1.6;
     color: #444444;
     display: block;
-    margin-left: 10px;
+    padding-left: 10px;
     order: 6;
-    margin-right: 20px;
-    margin-bottom: 12px;
+    padding-right: 20px;
+    padding-bottom: 12px;
   }
 
   .header__site-navigation-list {
@@ -251,8 +253,7 @@ header {
     font-weight: 700;
     line-height: 24px;
     display: block;
-    padding-top: 31px;
-    padding-left: 82px;
+    padding: 31px 20px 31px 82px;
   }
 
   .header__site-functions-item--search {
@@ -271,14 +272,14 @@ header {
   }
 
   .site-navigation__link--knitting {
-    margin-left: 36px;
-    padding-top: 0x;
+    padding-left: 18px;
+    padding-top: 0;
     display: block;
-    margin-top: 0;
   }
 
   .site-navigation__link--catalog {
     padding-top: 0;
+    padding-right: 18px;
     display: block;
     margin-top: 0;
   }
@@ -292,31 +293,33 @@ header {
   }
 }
 
-@media (min-width: $desktop-width) {
+@include desktop-up {
   .header__site-navigation {
     padding-left: 30px;
     padding-right: 30px;
   }
 
   .header__delivery {
-    margin-right: 20px;
-    margin-bottom: 12px;
+    padding-right: 20px;
+    padding-bottom: 12px;
   }
 
   .header__promos-link--new-arrivals {
-    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 25px;
   }
 
+  // .header__site-navigation-item--catalog {}
+
   .header__promos-link {
-    margin-top: 3px;
+    padding-top: 3px;
     color: $color;
     min-width: 159px;
     display: block;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
   }
 
   .site-navigation__link--knitting {
-    padding-top: 0x;
     display: block;
     margin-top: 0;
     min-height: 92px;
@@ -355,9 +358,12 @@ header {
   }
 
   .header__promos-link--sale {
-    margin-left: 60px;
     min-width: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 10px;
   }
+
 
   .header__site-navigation-list {
     display: flex;
@@ -392,14 +398,17 @@ header {
 
   .header__site-navigation-item--knitting a {
     padding-top: 32px;
+    padding-bottom: 31px;
+    padding-left: 35px;
+    padding-right: 10px;
     font-size: 17px;
     display: block;
     min-width: 150px;
-    margin-left: 0;
   }
 
   .header__site-navigation-item--catalog a {
     padding-top: 32px;
+    padding-bottom: 31px;
     font-size: 17px;
     display: block;
   }

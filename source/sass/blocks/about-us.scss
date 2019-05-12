@@ -1,6 +1,6 @@
 .about-us {
-  margin-top: 50px;
-  padding-top: 10px;
+
+  padding-top: 22px;
 
   @include wrapper;
   font-family: $font;
@@ -8,61 +8,74 @@
 
 .about-us__list {
   @include list-reset;
+  margin-top: 24px;
+  // margin-bottom: 5px;
 }
 
 .about-us__item {
   display: block;
-  min-height: 98px;
+  // margin-top: 14px;
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
-  padding-top: 65px;
-  max-width: 250px;
+  padding-top: 64px;
+  min-height: 98px;
+  // max-width: 250px;
   padding-bottom: 18px;
   position: relative;
+  padding-right: 10px;
 }
 
 .about-us__title {
   font-size: 25px;
-  line-height: 1.2;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  // padding: 5px 15px 5px 0;
 }
 
 .about-us__item-icon {
   fill: #63d1bb;
   position: absolute;
-  left: 5px;
+  left: 7px;
   top: 14px;
 }
 
-@media (min-width: $tablet-width) {
+@include tablet-up {
   .about-us__list {
     column-count: 2;
     width: 650px;
-  }
-
+    // height: 468px;
+  }// фиксим IE последней строчкой
   .about-us__item {
     margin-bottom: 34px;
     font-size: 20px;
-    max-width: 295px;
+    max-width: 265px;
+    padding-right: 0;
+    min-height: 105px;
+    overflow: hidden;
+
+    &--rocket {
+      max-width: 300px;
+    }
   }
 
   .about-us__title {
     font-size: 43px;
     line-height: 1.16;
-    margin-top: 68px;
+    margin-top: 58px;
     margin-left: -3px;
     margin-bottom: 40px;
   }
 }
 
-@media (min-width: $desktop-width) {
+@include desktop-up {
   .about-us__list {
     padding-left: 175px;
-    width: 857px;
+    width: 850px;
   }
 
   .about-us__title {
-    margin-top: 92px;
+    margin-top: 81px;
     padding-left: 175px;
     font-size: 53px;
     margin-bottom: 38px;
