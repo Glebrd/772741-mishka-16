@@ -30,3 +30,43 @@
   padding: 0;
   margin: 0;
 }
+
+
+@mixin retina {
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    @content;
+  }
+}
+
+@mixin desktop-up {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}
+
+@mixin tablet-up {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin mobile-only {
+  @media (max-width: $mobile-width-only) {
+    @content;
+  }
+}
+
+// @mixin responsive($media) {
+//   @if $media==tablets {
+//     @media (min-width: $tablet-width) {
+//       @content;
+//     }
+//   }
+
+//   @else if $media==desktop {
+//     @media (max-width: $desktop-width) {
+//       @content;
+//     }
+//   }
+// }

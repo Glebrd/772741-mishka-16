@@ -10,25 +10,34 @@ body {
   box-sizing: inherit;
 }
 
-// body>* {
-//   outline: 1px solid red;
-// }
+body>* {
+  outline: 1px solid red;
+}
 
-// body>*>* {
-//   outline: 1px solid green;
-// }
+body>*>* {
+  outline: 1px solid green;
+}
 
-// body>*>*>* {
-//   outline: 1px solid blue;
-// }
+body>*>*>* {
+  outline: 1px solid blue;
+}
 
-// body>*>*>*>* {
-//   outline: 1px solid blueviolet;
-// }
+body>*>*>*>* {
+  outline: 1px solid blueviolet;
+}
 
-// body>*>*>*>*>* {
-//   outline: 1px solid yellow;
-// }
+body>*>*>*>*>* {
+  outline: 1px solid yellow;
+}
+
+body>*>*>*>*>*>* {
+  outline: 1px solid greenyellow;
+}
+
+body>*>*>*>*>*>*>* {
+  outline: 1px solid pink;
+}
+
 
 html {
   box-sizing: border-box;
