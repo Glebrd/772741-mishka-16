@@ -15,17 +15,17 @@ navToggle.addEventListener('click', function () {
   }
 });
 
+
 // var link = document.querySelector(".goods__cart-link");
 var popup = document.querySelector(".modal");
   document.addEventListener("click", function (evt) {
     console.log(evt.target);
-    if ((evt.target.classList.contains("goods__cart-link"))||(evt.target.classList.contains("goods__cart-icon"))) {
+    if ((evt.target.classList.contains("goods__cart-link"))||(evt.target.classList.contains("goods__cart-icon"))||(evt.target.parentElement.classList.contains("goods__cart-icon"))) {
       evt.preventDefault();
       popup.classList.add("modal-show"); }
     else if (evt.target.closest(".modal")) { return; }
     else {popup.classList.remove("modal-show"); }
   })
-
 
 
 /*! picturefill - v3.0.2 - 2016-02-12
