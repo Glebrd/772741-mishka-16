@@ -1,8 +1,9 @@
 .feedback {
   @include wrapper;
   font-family: $font;
-  padding-bottom: 43px;
+  padding-bottom: 23px;
   position: relative;
+  letter-spacing: normal;
 }
 
 .feedback::after {
@@ -19,7 +20,7 @@
 }
 
 .feedback__title {
-  margin-top: 39px;
+  margin-top: 42px;
   margin-bottom: 25px;
 }
 
@@ -47,14 +48,13 @@
 }
 
 a.feedback__btn-write {
-  padding: 20px 80px;
-  margin-top: 38px;
+  padding: 16px;
+  text-align: center;
+  margin-top: 29px;
+  margin-bottom: 20px;
   height: 53px;
   display: block;
-  width: 260px;
-  padding-top: 16px;
-  padding-left: 79px;
-  margin-bottom: 0;
+  min-width: 260px;
 }
 
 .feedback__btn {
@@ -64,6 +64,7 @@ a.feedback__btn-write {
   border: solid 1px #ececec;
   background: white;
   position: relative;
+  margin-bottom: 10px;
 }
 
 .feedback__btn::before {
@@ -82,7 +83,7 @@ a.feedback__btn-write {
 }
 
 
-@media (min-width: $tablet-width) {
+@include tablet-up {
   .feedback {
     background: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
@@ -90,7 +91,7 @@ a.feedback__btn-write {
     padding-bottom: 70px;
     background-size: 350px auto;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @include retina {
       background-image: url("../img/review@2x.jpg");
     }
   }
@@ -106,7 +107,10 @@ a.feedback__btn-write {
 
   .feedback__text {
     font-size: 17px;
-    margin-bottom: 58px;
+    padding-top: 2px;
+    padding-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 38px;
   }
 
   .feedback__name {
@@ -116,26 +120,27 @@ a.feedback__btn-write {
 
   a.feedback__btn-write {
     position: absolute;
-    top: 41px;
+    top: 49px;
     right: 50px;
-    width: 175px;
-    padding-left: 38px;
+    padding: 15px 40px;
+    line-height: 20px;
+    text-align: center;
+    min-width: 150px;
   }
 
   button.feedback__btn--prev {
     position: absolute;
     right: 115px;
-    bottom: 103px;
+    bottom: 93px;
     border: none;
   }
 
   button.feedback__btn--next {
     position: absolute;
     right: 27px;
-    bottom: 103px;
+    bottom: 93px;
     border: none;
   }
-
 
   .feedback::after {
     @include pseudo;
@@ -151,21 +156,21 @@ a.feedback__btn-write {
   }
 }
 
-@media (min-width: $desktop-width) {
+@include desktop-up {
   .feedback {
     margin-top: 36px;
     padding-left: 175px;
     width: 1050px;
     padding-bottom: 110px;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @include retina {
       background-image: url("../img/review@2x.jpg");
     }
   }
 
   a.feedback__btn-write {
     position: absolute;
-    top: 41px;
+    top: 52px;
     right: 0;
     width: 175px;
     padding-left: 38px;
@@ -174,28 +179,34 @@ a.feedback__btn-write {
   button.feedback__btn--prev {
     position: absolute;
     right: 63px;
-    bottom: 143px;
+    bottom: 133px;
     border: none;
   }
 
   button.feedback__btn--next {
     position: absolute;
     right: -24px;
-    bottom: 143px;
+    bottom: 133px;
     border: none;
   }
 
   .feedback__title {
     font-size: 53px;
     margin-top: 0;
-    padding-top: 69px;
+    padding-top: 72px;
     margin-bottom: 47px;
   }
 
   .feedback__text {
+    padding-top: 0;
     font-size: 17px;
     max-width: 770px;
-    margin-bottom: 38px;
+    margin-bottom: 18px;
+    margin-right: 10px;
+  }
+
+  .feedback__name {
+    margin-top: 0;
   }
 
   .feedback::after {
