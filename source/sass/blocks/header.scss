@@ -146,8 +146,11 @@ header {
     position: relative;
   }
 }
-
-// end of popup menu mobil
+// hovers
+.site-navigation__item:hover {
+  opacity: 0.6;
+}
+// end of popup menu mobile
 
 @include tablet-up {
   .header__site-navigation {

@@ -16,47 +16,98 @@ navToggle.addEventListener('click', function () {
 });
 
 // var link = document.querySelector(".goods__cart-link");
+// var popup = document.querySelector(".modal");
+//   document.addEventListener("click", function (evt) {
+//     console.log(evt.target);
+//     if ((evt.target.classList.contains("goods__cart-link"))||(evt.target.classList.contains("goods__cart-icon"))||(evt.target.parentElement.classList.contains("goods__cart-icon"))) {
+//       evt.preventDefault();
+//       popup.classList.add("modal-show"); }
+//     else if (evt.target.closest(".modal")) { return; }
+//     else {popup.classList.remove("modal-show"); }
+//   })
+
+// вызов модального окна в каталоге
+
 var popup = document.querySelector(".modal");
-  document.addEventListener("click", function (evt) {
-    console.log(evt.target);
-    if ((evt.target.classList.contains("goods__cart-link"))||(evt.target.classList.contains("goods__cart-icon"))||(evt.target.parentElement.classList.contains("goods__cart-icon"))) {
+var link = document.querySelectorAll(".goods__cart-link");
+var overlay = document.querySelector(".overlay");
+
+// for (let index = 0; index < array.length; index++) {
+//   const element = array[index];
+
+// }
+
+
+  for (var i = 0; i < link.length; i++) {
+    link[i].addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.add("modal-show");
+    overlay.classList.add("overlay--show");
+    })}
+
+    for (var i = 0; i < link.length; i++) {
+      overlay.addEventListener("click", function (evt) {
       evt.preventDefault();
-      popup.classList.add("modal-show"); }
-    else if (evt.target.closest(".modal")) { return; }
-    else {popup.classList.remove("modal-show"); }
-  })
+      popup.classList.remove("modal-show");
+      overlay.classList.remove("overlay--show");
+      })}
 
+// вызов модального окна на главной странице
 
-/*! picturefill - v3.0.2 - 2016-02-12
- * https://scottjehl.github.io/picturefill/
- * Copyright (c) 2016 https://github.com/scottjehl/picturefill/blob/master/Authors.txt; Licensed MIT
- */
-! function (a) {
-  var b = navigator.userAgent;
-  a.HTMLPictureElement && /ecko/.test(b) && b.match(/rv\:(\d+)/) && RegExp.$1 < 45 && addEventListener("resize", function () {
-    var b, c = document.createElement("source"),
-      d = function (a) {
-        var b, d, e = a.parentNode;
-        "PICTURE" === e.nodeName.toUpperCase() ? (b = c.cloneNode(), e.insertBefore(b, e.firstElementChild), setTimeout(function () {
-          e.removeChild(b)
-        })) : (!a._pfLastSize || a.offsetWidth > a._pfLastSize) && (a._pfLastSize = a.offsetWidth, d = a.sizes, a.sizes += ",100vw", setTimeout(function () {
-          a.sizes = d
-        }))
-      },
-      e = function () {
-        var a, b = document.querySelectorAll("picture > img, img[srcset][sizes]");
-        for (a = 0; a < b.length; a++) d(b[a])
-      },
-      f = function () {
-        clearTimeout(b), b = setTimeout(e, 99)
-      },
-      g = a.matchMedia && matchMedia("(orientation: landscape)"),
-      h = function () {
-        f(), g && g.addListener && g.addListener(f)
-      };
-    return c.srcset = "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==", /^[c|i]|d$/.test(document.readyState || "") ? h() : document.addEventListener("DOMContentLoaded", h), f
-  }())
-}(window),
+// var popup = document.querySelector(".modal");
+var deal = document.querySelector(".deal-of-the-week__btn");
+// var overlay = document.querySelector(".overlay");
+
+deal.addEventListener("click", function (evt){
+  evt.preventDefault();
+  popup.classList.add("modal-show");
+  overlay.classList.add("overlay--show");
+})
+
+overlay.addEventListener("click", function (evt){
+  evt.preventDefault();
+  popup.classList.remove("modal-show");
+  overlay.classList.remove("overlay--show");
+})
+
+// overlay.addEventListener("click", function (evt) {
+//   for (i = 0; i < links.length; ++i) {
+//       evt.preventDefault();
+//       popup.classList.remove("modal-show");
+//       overlay.classList.remove("overlay--show");
+//     }
+//   })
+
+  /*! picturefill - v3.0.2 - 2016-02-12
+   * https://scottjehl.github.io/picturefill/
+   * Copyright (c) 2016 https://github.com/scottjehl/picturefill/blob/master/Authors.txt; Licensed MIT
+   */
+  ! function (a) {
+    var b = navigator.userAgent;
+    a.HTMLPictureElement && /ecko/.test(b) && b.match(/rv\:(\d+)/) && RegExp.$1 < 45 && addEventListener("resize", function () {
+      var b, c = document.createElement("source"),
+        d = function (a) {
+          var b, d, e = a.parentNode;
+          "PICTURE" === e.nodeName.toUpperCase() ? (b = c.cloneNode(), e.insertBefore(b, e.firstElementChild), setTimeout(function () {
+            e.removeChild(b)
+          })) : (!a._pfLastSize || a.offsetWidth > a._pfLastSize) && (a._pfLastSize = a.offsetWidth, d = a.sizes, a.sizes += ",100vw", setTimeout(function () {
+            a.sizes = d
+          }))
+        },
+        e = function () {
+          var a, b = document.querySelectorAll("picture > img, img[srcset][sizes]");
+          for (a = 0; a < b.length; a++) d(b[a])
+        },
+        f = function () {
+          clearTimeout(b), b = setTimeout(e, 99)
+        },
+        g = a.matchMedia && matchMedia("(orientation: landscape)"),
+        h = function () {
+          f(), g && g.addListener && g.addListener(f)
+        };
+      return c.srcset = "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==", /^[c|i]|d$/.test(document.readyState || "") ? h() : document.addEventListener("DOMContentLoaded", h), f
+    }())
+  }(window),
   function (a, b, c) {
     "use strict";
 
@@ -131,7 +182,7 @@ var popup = document.querySelector(".modal");
       }
 
       function f() {
-        for (c(T), i = "", j = "in descriptor"; ;) {
+        for (c(T), i = "", j = "in descriptor";;) {
           if (k = a.charAt(m), "in descriptor" === j)
             if (d(k)) i && (h.push(i), i = "", j = "after descriptor");
             else {
@@ -156,7 +207,7 @@ var popup = document.querySelector(".modal");
             } m += 1
         }
       }
-      for (var g, h, i, j, k, l = a.length, m = 0, n = []; ;) {
+      for (var g, h, i, j, k, l = a.length, m = 0, n = [];;) {
         if (c(U), m >= l) return n;
         g = c(V), h = [], "," === g.slice(-1) ? (g = g.replace(W, ""), e()) : f()
       }
@@ -171,7 +222,7 @@ var popup = document.querySelector(".modal");
         function c() {
           g[0] && (h.push(g), g = [])
         }
-        for (var e, f = "", g = [], h = [], i = 0, j = 0, k = !1; ;) {
+        for (var e, f = "", g = [], h = [], i = 0, j = 0, k = !1;;) {
           if (e = a.charAt(j), "" === e) return b(), c(), h;
           if (k) {
             if ("*" === e && "/" === a[j + 1]) {
@@ -221,7 +272,7 @@ var popup = document.querySelector(".modal");
     b.createElement("picture");
     var o, p, q, r, s = {},
       t = !1,
-      u = function () { },
+      u = function () {},
       v = b.createElement("img"),
       w = v.getAttribute,
       x = v.setAttribute,
@@ -281,7 +332,7 @@ var popup = document.querySelector(".modal");
             if (N[b] = !1, d && (e = b.match(a))) N[b] = e[1] * Q[e[2]];
             else try {
               N[b] = new Function("e", c(b))(Q)
-            } catch (f) { }
+            } catch (f) {}
           return N[b]
         }
       }(),
@@ -396,7 +447,7 @@ var popup = document.querySelector(".modal");
       a[s.ns] || (a[s.ns] = {}), c = a[s.ns], (d || c.evaled !== r) && ((!c.parsed || b.reevaluate) && s.parseSets(a, a.parentNode, b), c.supported ? c.evaled = r : h(a))
     }, s.setupRun = function () {
       (!S || M || P !== a.devicePixelRatio) && f()
-    }, s.supPicture ? (ba = u, s.fillImg = u): ! function () {
+    }, s.supPicture ? (ba = u, s.fillImg = u) : ! function () {
       var c, d = a.attachEvent ? /d$|^c/ : /d$|^c|^i/,
         e = function () {
           var a = b.readyState || "";

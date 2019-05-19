@@ -93,7 +93,7 @@
       <h1 class="goods__title title">Каталог товаров</h1>
       <ul class="goods__list">
         <li class="goods__item">
-          <a href="#" class="goods__link">
+          <a href="catalog.html/hare" class="goods__link">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
                 srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
@@ -109,7 +109,7 @@
             </picture>
           </a>
           <div class="goods__wrap">
-            <a href="#" class="goods__title">
+            <a href="catalog.html/hare" class="goods__title">
               <h3>Зайчик-попрыгайчик</h3>
             </a>
             <p class="goods__info">Рост 30 см, вес 200 г</p>
@@ -121,7 +121,7 @@
           </div>
         </li>
         <li class="goods__item">
-          <a href="#" class="goods__link">
+          <a href="catalog.html/bowl" class="goods__link">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
                 srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
@@ -137,7 +137,7 @@
             </picture>
           </a>
           <div class="goods__wrap">
-            <a href="#" class="goods__title">
+            <a href="catalog.html/bowl" class="goods__title">
               <h3>Корзинка для белья</h3>
             </a>
             <p class="goods__info">Диаметр 15 см, высота 10 см</p>
@@ -150,7 +150,7 @@
 
         </li>
         <li class="goods__item">
-          <a href="#" class="goods__link">
+          <a href="catalog.html/toys-bowl" class="goods__link">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
                 srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
@@ -166,7 +166,7 @@
             </picture>
           </a>
           <div class="goods__wrap">
-            <a href="#" class="goods__title">
+            <a href="catalog.html/toys-bowl" class="goods__title">
               <h3>Большая корзинка <br> для игрушек</h3>
             </a>
             <p class="goods__info">Диаметр 30 см, высота 30 см</p>
@@ -197,13 +197,23 @@
 
     </section>
     <section class="modal">
-      <h2 class="modal__title">Добавить
-        в корзину</h2>
+      <h2 class="modal__title">Добавить в корзину</h2>
       <p class="modal__text">Выберите размер:</p>
-        <button class="modal__button">S</button>
-        <button class="modal__button">M</button>
-        <button class="modal__button">L</button>
-        <a class="modal__order-button button">Добавить</button>
+      <ul class="modal__size-list">
+        <li class="modal__size-item">
+          <label for="small" class="modal__button">
+            <input type="radio" class="visually-hidden" name="item-size" id="small" checked><span>S</span></label>
+        </li>
+        <li class="modal__size-item">
+                    <label for="medium" class="modal__button">
+            <input type="radio" class="visually-hidden" name="item-size" id="medium"><span>M</span></label></li>
+        <li class="modal__size-item">
+
+          <label for="large" class="modal__button">
+            <input type="radio" class="visually-hidden" name="item-size" id="large"><span>L</span></label>
+        </li>
+      </ul>
+      <a class="modal__order-button button">Добавить</button></a>
     </section>
   </main>
   <footer class="footer catalog__footer">
@@ -240,5 +250,6 @@
       </div>
     </div>
   </footer>
+  <div class="overlay"></div>
   <script src="js/js.js"></script>
 </body>

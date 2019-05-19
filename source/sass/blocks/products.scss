@@ -35,6 +35,11 @@
   position: relative;
 }
 
+.products-category:hover {
+  margin-top: -5px;
+  height: 109px;
+}
+
 .products-category::after {
   @include pseudo;
   height: 62px;
@@ -57,8 +62,11 @@
   background-color: #56c3b2;
 }
 
-
 @include tablet-up {
+  .products-category:hover {
+    margin-top: -5px;
+    height: 124px;
+  }
   .products {
     min-height: 746px;
     background: url("../img/hero-tablet@1x.jpg") no-repeat -192px 0;
@@ -129,6 +137,8 @@
 
 
 @include desktop-up {
+
+
   .products {
     background: url("../img/hero-desktop@1x.jpg") no-repeat -1px 0;
     border: 1px solid transparent;
