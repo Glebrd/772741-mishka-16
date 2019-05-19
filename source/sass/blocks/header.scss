@@ -146,9 +146,32 @@ header {
     position: relative;
   }
 }
+
 // hovers
-.site-navigation__item:hover {
+.header__site-navigation-list a:hover,
+.header__site-functions-list a:hover,
+.header__promos-list a:hover {
   opacity: 0.6;
+}
+
+.header__site-navigation-list a:active,
+.header__site-functions-list a:active,
+.header__promos-list a:active {
+  opacity: 0.3;
+}
+
+.header__site-functions-link--search:active .header__site-functions-link--search-icon,
+.header__site-functions-link--cart:active .header__site-functions-link--cart-icon {
+  fill: #63d1bb;
+  opacity: 0.3;
+}
+
+.header__logo:hover{
+  opacity: 0.6;
+}
+
+.header__logo:active{
+  opacity: 0.3;
 }
 // end of popup menu mobile
 
