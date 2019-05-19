@@ -14,7 +14,7 @@ navToggle.addEventListener('click', function () {
     navMain.classList.remove('header__site-navigation--opened');
   }
 });
-//Test12
+//Test123
 
 // var link = document.querySelector(".goods__cart-link");
 var popup = document.querySelector(".modal");
