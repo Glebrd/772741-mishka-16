@@ -297,13 +297,13 @@ header {
     order: 3;
   }
 
-  .site-navigation__link--knitting {
+  .header__site-navigation-link--knitting {
     padding-left: 18px;
     padding-top: 0;
     display: block;
   }
 
-  .site-navigation__link--catalog {
+  .heaser__site-navigation-link--catalog {
     padding-top: 0;
     padding-right: 18px;
     display: block;
@@ -345,14 +345,24 @@ header {
     padding-bottom: 10px;
   }
 
-  .site-navigation__link--knitting {
+  .header__site-navigation-link--knitting {
     display: block;
     margin-top: 0;
     min-height: 92px;
     padding-left: 35px;
   }
 
-  .site-navigation__link--catalog {
+  // .site-navigation__link--catalog {
+  //   padding-top: 0;
+  //   display: block;
+  //   margin-top: 0;
+  //   min-height: 92px;
+  //   padding-left: 20px;
+  //   padding-right: 37px;
+  //   // min-width: 205px;
+  // }
+
+  .header__site-navigation-link--catalog {
     padding-top: 0;
     display: block;
     margin-top: 0;
@@ -361,7 +371,6 @@ header {
     padding-right: 37px;
     // min-width: 205px;
   }
-
 
   .header__site-navigation-item--knitting {
     border-left: 1px solid #ececec;
