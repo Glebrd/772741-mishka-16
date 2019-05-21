@@ -27,11 +27,11 @@
   min-height: 30px;
   max-width: 190px;
 
-  &:hover>.footer__developer-logo{
+  &:hover > .footer__developer-logo {
     fill: #46c1ae;
   }
 
-  &:active{
+  &:active {
     opacity: 0.3;
   }
 }
@@ -67,11 +67,11 @@
     margin-top: 49px;
     margin-right: 70px;
 
-    &:hover{
+    &:hover {
       fill: #46c1ae;
     }
 
-    &:active{
+    &:active {
       fill: #46c1ae;
       opacity: 0.3;
     }

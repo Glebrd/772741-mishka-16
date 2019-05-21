@@ -89,7 +89,7 @@
 }
 
 
-input[type="radio"]+.order__type-radio::before {
+input[type="radio"] + .order__type-radio::before {
   @include pseudo;
   width: 40px;
   height: 40px;
@@ -103,7 +103,7 @@ input[type="radio"]+.order__type-radio::before {
   // }
 }
 
-input[type="radio"]:checked+.order__type-radio::before {
+input[type="radio"]:checked + .order__type-radio::before {
   @include pseudo;
   width: 40px;
   height: 40px;
@@ -117,21 +117,21 @@ input[type="radio"]:checked+.order__type-radio::before {
 }
 
 // styleguide
-.order__type-item:hover input[type="radio"]+.order__type-radio::before {
+.order__type-item:hover input[type="radio"] + .order__type-radio::before {
   box-shadow: 0 0 0 2px #62d1ba inset;
 }
 
-.order__type-item:hover input[type="radio"]:checked+.order__type-radio::before {
+.order__type-item:hover input[type="radio"]:checked + .order__type-radio::before {
   box-shadow:
     0 0 0 2px #62d1ba inset,
     0 0 0 15px white inset;
 }
 
-.order__type-item:active input[type="radio"]+.order__type-radio::before {
+.order__type-item:active input[type="radio"] + .order__type-radio::before {
   box-shadow: 0 0 0 2px rgba(68, 68, 68, 0.3) inset;
 }
 
-.order__type-item:active input[type="radio"]:checked+.order__type-radio::before {
+.order__type-item:active input[type="radio"]:checked + .order__type-radio::before {
   box-shadow:
     0 0 0 2px rgba(68, 68, 68, 0.3) inset,
     0 0 0 15px white inset;
@@ -143,7 +143,7 @@ input[type="radio"]:checked+.order__type-radio::before {
   position: relative;
 }
 
-input[type="checkbox"]+.order__color-checkbox::before {
+input[type="checkbox"] + .order__color-checkbox::before {
   @include pseudo;
   width: 40px;
   height: 39px;
@@ -152,7 +152,7 @@ input[type="checkbox"]+.order__color-checkbox::before {
   left: -14px;
 }
 
-input[type="checkbox"]:checked+.order__color-checkbox::before {
+input[type="checkbox"]:checked + .order__color-checkbox::before {
   @include pseudo;
   background-image: url("../img/icon-tick.svg");
   background-size: 22px 16px;
@@ -162,13 +162,13 @@ input[type="checkbox"]:checked+.order__color-checkbox::before {
 
 // styleguide
 
-.order__color-item:hover input[type="checkbox"]+.order__color-checkbox::before,
-.order__color-item:hover input[type="checkbox"]:checked+.order__color-checkbox::before {
+.order__color-item:hover input[type="checkbox"] + .order__color-checkbox::before,
+.order__color-item:hover input[type="checkbox"]:checked + .order__color-checkbox::before {
   border: 2px solid #62d1ba;
 }
 
-.order__color-item:active input[type="checkbox"]+.order__color-checkbox::before,
-.order__color-item:active input[type="checkbox"]:checked+.order__color-checkbox::before {
+.order__color-item:active input[type="checkbox"] + .order__color-checkbox::before,
+.order__color-item:active input[type="checkbox"]:checked + .order__color-checkbox::before {
   border: 2px solid #444444;
   opacity: 0.3;
 }
@@ -273,7 +273,7 @@ input[type="checkbox"]:checked+.order__color-checkbox::before {
   &:hover {
     border-bottom: 2px solid #62d1ba;
 
-    &+.order__phone-icon {
+    & + .order__phone-icon {
       fill: #62d1ba;
       opacity: 1;
     }
@@ -284,7 +284,7 @@ input[type="checkbox"]:checked+.order__color-checkbox::before {
     color: #444444;
     opacity: 1;
 
-    &+.order__phone-icon {
+    & + .order__phone-icon {
       fill: #62d1ba;
       opacity: 1;
     }
@@ -325,7 +325,7 @@ input[type="checkbox"]:checked+.order__color-checkbox::before {
   &:hover {
     border-bottom: 2px solid #62d1ba;
 
-    &+.order__email-icon {
+    & + .order__email-icon {
       fill: #62d1ba;
       opacity: 1;
     }
@@ -336,7 +336,7 @@ input[type="checkbox"]:checked+.order__color-checkbox::before {
     color: #444444;
     opacity: 1;
 
-    &+.order__email-icon {
+    & + .order__email-icon {
       fill: #62d1ba;
       opacity: 1;
     }
@@ -364,11 +364,11 @@ input[type="checkbox"]:checked+.order__color-checkbox::before {
     color: rgba(68, 68, 68, 0.3);
   }
 
-  &:hover{
+  &:hover {
     border: 2px solid #62d1ba;
   }
 
-  &:focus{
+  &:focus {
     border: 2px solid #62d1ba;
   }
 }
@@ -476,14 +476,14 @@ input[type="checkbox"]:checked+.order__color-checkbox::before {
     padding-left: 52px;
   }
 
-  input[type="radio"]+.order__type-radio::before {
+  input[type="radio"] + .order__type-radio::before {
     width: 52px;
     height: 52px;
     top: -12px;
     left: -29px;
   }
 
-  input[type="radio"]:checked+.order__type-radio::before {
+  input[type="radio"]:checked + .order__type-radio::before {
     width: 52px;
     height: 52px;
     background: #62d1ba;
@@ -566,7 +566,7 @@ input[type="checkbox"]:checked+.order__color-checkbox::before {
     margin-bottom: 46px;
   }
 
-  input[type="checkbox"]+.order__color-checkbox::before {
+  input[type="checkbox"] + .order__color-checkbox::before {
     @include pseudo;
     width: 54px;
     height: 52px;
@@ -575,7 +575,7 @@ input[type="checkbox"]:checked+.order__color-checkbox::before {
     left: -14px;
   }
 
-  input[type="checkbox"]:checked+.order__color-checkbox::before {
+  input[type="checkbox"]:checked + .order__color-checkbox::before {
     @include pseudo;
     background-image: url("../img/icon-tick.svg");
     background-size: 33px 22px;

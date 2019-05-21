@@ -1,3 +1,4 @@
+/*stylelint-disable*/
 /*!
  * @copyright Copyright (c) 2017 IcoMoon.io
  * @license   Licensed under MIT license

@@ -57,16 +57,20 @@
 .products-category--toy {
   background-color: #56c3b2;
 }
+
 .products-category:hover {
   margin-top: -5px;
   height: 109px;
-  &::after{
-    opacity: 0.7;}
+
+  &::after {
+    opacity: 0.7;
+  }
 }
 
 .products-category:active {
   color: rgba(255, 255, 255, 0.3);
-  &::after{
+
+  &::after {
     opacity: 0.3;
   }
 }
@@ -76,6 +80,7 @@
     margin-top: -5px;
     height: 124px;
   }
+
   .products {
     min-height: 746px;
     background: url("../img/hero-tablet@1x.jpg") no-repeat -192px 0;
@@ -146,8 +151,6 @@
 
 
 @include desktop-up {
-
-
   .products {
     background: url("../img/hero-desktop@1x.jpg") no-repeat -1px 0;
     border: 1px solid transparent;

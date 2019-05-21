@@ -65,11 +65,13 @@ a.feedback__btn-write {
   background: white;
   position: relative;
   margin-bottom: 10px;
-  &:hover{
+
+  &:hover {
     opacity: 0.6;
   }
-  &:active{
-   opacity: 0.3;
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
