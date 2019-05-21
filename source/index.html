@@ -47,33 +47,33 @@
     <include src="build/img/sprite.svg"></include>
   </div>
 
-  <header class="header index__header">
+  <header class="header index__index">
     <nav class="header__site-navigation header__site-navigation--opened">
-      <a class="header__logo logo">
+      <a class="header__logo logo" href="index.html">
         <picture>
           <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img src="img/logo-mobile.svg" alt="Магазин Мишка - логотип" width="149" height="72">
+          <img src="img/logo-mobile.svg" alt="Магазин Мишка - логотип">
         </picture>
       </a>
       <button class="header__burger-menu-btn"></button>
       <ul class="header__site-navigation-list">
-        <li class="header__site-navigation-item--catalog"><a href="catalog.html"
-            class="site-navigation__link--catalog">Каталог
+        <li class="header__site-navigation-item header__site-navigation-item--catalog"><a href="catalog.html"
+            class="header__site-navigation__link header__site-navigation__link--catalog">Каталог
             товаров</a></li>
-        <li class="header__site-navigation-item--knitting"><a href="form.html"
-            class="site-navigation__link--knitting">Вязание
+        <li class="header__site-navigation-item header__site-navigation-item--knitting"><a href="form.html"
+            class="header__site-navigation__link header__site-navigation__link--knitting">Вязание
             на заказ</a></li>
       </ul>
       <ul class="header__site-functions-list">
-        <li class="header__site-functions-item--search"><a href="#"
+        <li class="header__site-functions-item header__site-functions-item--search"><a href="#"
             class="header__site-functions-link header__site-functions-link--search">
-            <svg class="header__site-functions-link--search-icon" width="18" height="18">
+            <svg class="header__site-functions-link-icon header__site-functions-link-icon--search" width="18" height="18">
               <use xlink:href="#icon-search"></use>
             </svg>Поиск по сайту</a></li>
-        <li class="header__site-functions-item--cart"><a href="#"
+        <li class="header__site-functions-item header__site-functions-item--cart"><a href="#"
             class="header__site-functions-link header__site-functions-link--cart">
-            <svg class="header__site-functions-link--cart-icon" width="21" height="18">
+            <svg class="header__site-functions-link-icon header__site-functions-link-icon--cart" width="21" height="18">
               <use xlink:href="#icon-cart"></use>
             </svg>Корзина: пока пуста</a></li>
       </ul>
@@ -85,7 +85,6 @@
           <a href="#" class="header__promos-link header__promos-link--sale">Распродажа</a>
         </li>
       </ul>
-    <!-- </div> -->
       <a href="#" class="header__delivery">Бесплатная доставка по России</a>
     </nav>
   </header>
@@ -263,5 +262,7 @@
     </div>
   </footer>
   <div class="overlay"></div>
-  <script src="js/js.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/picturefill.js"></script>
+  <script src="js/svgxuse.js"></script>
 </body>
