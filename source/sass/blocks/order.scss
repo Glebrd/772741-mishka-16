@@ -199,6 +199,7 @@ input[type="checkbox"]:checked+.order__color-checkbox::before {
   margin-top: 22px;
 }
 
+
 .order__first-name,
 .order__last-name,
 .order__middle-name {
@@ -212,12 +213,17 @@ input[type="checkbox"]:checked+.order__color-checkbox::before {
   padding-bottom: 16px;
   padding-top: 16px;
 
+  // &:invalid {
+  //   border-bottom: 2px solid #ff0000;
+  // }
+
   &:hover {
     border-bottom: 2px solid #62d1ba;
   }
 
   &:focus {
     border-bottom: 2px solid #62d1ba;
+    outline: none;
   }
 }
 
