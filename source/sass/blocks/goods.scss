@@ -77,6 +77,27 @@
   display: block;
 }
 
+// styleguide
+.goods__item:hover .goods__wrap {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ececec;
+}
+
+.goods__item:active .goods__wrap {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ececec;
+}
+
+.goods__cart-link:hover {
+  fill: #63d1bb;
+  opacity: 1;
+}
+
+.goods__cart-link:active {
+  fill: #63d1bb;
+  opacity: 0.3;
+}
+
 @include tablet-up {
   .goods__title.title {
     font-size: 43px;
@@ -106,6 +127,10 @@
   .goods__item {
     display: flex;
     margin-bottom: 54px;
+    // &:hover{
+    //   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    //   border: 1px solid #ececec;
+    // }
   }
 
   .goods__img {
