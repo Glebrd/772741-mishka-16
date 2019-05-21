@@ -124,7 +124,7 @@ input[type="radio"]:checked + .order__type-radio::before {
 .order__type-item:hover input[type="radio"]:checked + .order__type-radio::before {
   box-shadow:
     0 0 0 2px #62d1ba inset,
-    0 0 0 15px white inset;
+    0 0 0 12px white inset;
 }
 
 .order__type-item:active input[type="radio"] + .order__type-radio::before {
@@ -492,6 +492,13 @@ input[type="checkbox"]:checked + .order__color-checkbox::before {
       0 0 0 15px white inset;
     top: -12px;
     left: -29px;
+  }
+
+  // styleguide
+  .order__type-item:hover input[type="radio"]:checked + .order__type-radio::before {
+    box-shadow:
+      0 0 0 2px #62d1ba inset,
+      0 0 0 15px white inset;
   }
 
   /*А так можно?*/
