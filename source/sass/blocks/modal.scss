@@ -1,25 +1,28 @@
+// for JS
+
 .modal {
   position: fixed;
   width: 320px;
   height: 336px;
-  box-shadow: 0px 5px 10px 0 rgba(0, 1, 1, 0.25);
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
   border: solid 1px #c6c6c6;
   z-index: 150;
   top: 50%;
   left: 50%;
   margin-left: -160px;
   margin-top: -168px;
-  padding: 36px 30px 50px 30px;
+  padding: 30px 30px 50px 30px;
   background-color: white;
   font-family: "Open Sans", sans-serif;
   display: none;
 }
 
-.modal-show {
+.modal--show {
   display: block;
 }
 
 .modal__title {
+  margin: 0;
   font-size: 25px;
   font-weight: 700;
   line-height: 30px;
@@ -29,24 +32,67 @@
 }
 
 .modal__text {
+  margin: 20px 0 30px 0;
   color: #444444;
   font-size: 15px;
   font-weight: 400;
   text-align: center;
 }
 
-.modal__button {
+.modal__size-list {
+  @include list-reset;
   margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal__button input[type="radio"] + span {
+  display: inline-block;
+  text-align: center;
+  padding: 15px;
   width: 82px;
   height: 52px;
-  border: 2px solid rgb(68, 68, 68);
+  // border: 2px solid rgb(68, 68, 68);
   border: 2px solid rgba(68, 68, 68, 0.1);
   background-color: #ffffff;
   color: #000000;
   font-size: 17px;
   font-weight: 700;
   text-transform: uppercase;
+  cursor: pointer;
 }
+
+.modal__button input[type="radio"]:checked + span {
+  display: inline-block;
+  text-align: center;
+  padding: 15px;
+  width: 82px;
+  height: 52px;
+  border: 2px solid #63d1bb;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.modal__button input[type="radio"]:hover + span {
+  border: 2px solid rgba(68, 68, 68, 0.3);
+}
+
+// .modal__button {
+//   margin-top: 10px;
+//   width: 82px;
+//   height: 52px;
+//   border: 2px solid rgb(68, 68, 68);
+//   border: 2px solid rgba(68, 68, 68, 0.1);
+//   background-color: #ffffff;
+//   color: #000000;
+//   font-size: 17px;
+//   font-weight: 700;
+//   text-transform: uppercase;
+// }
 
 .modal__order-button {
   margin-top: 30px;
@@ -58,6 +104,7 @@
   text-transform: uppercase;
   padding: 18px 30px;
   text-align: center;
+  cursor: pointer;
 }
 
 @include tablet-up {
@@ -66,5 +113,31 @@
     height: 336px;
     margin-left: -283px;
     margin-top: -168px;
+    padding: 50px;
+  }
+
+  .modal__title {
+    font-size: 30px;
+  }
+
+  .modal__text {
+    margin-top: 30px;
+    margin-bottom: 26px;
+    font-size: 17px;
+  }
+
+  .modal__size-list {
+    padding: 0 58px;
+  }
+
+  .modal__button input[type="radio"] + span,
+  .modal__button input[type="radio"]:checked + span {
+    width: 112px;
+  }
+
+  .modal__order-button {
+    max-width: 350px;
+    margin-left: 58px;
+    margin-right: 58px;
   }
 }

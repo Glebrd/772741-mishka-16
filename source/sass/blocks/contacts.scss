@@ -20,6 +20,7 @@
 
 .contacts__map-wrapper iframe {
   width: 100%;
+  border: 0;
 }
 
 .contacts__title {
@@ -47,6 +48,15 @@
   border-bottom: 1px solid #62d1ba;
   line-height: 30px;
   margin-bottom: 28px;
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    color: #46c1ae;
+    opacity: 0.3;
+  }
 }
 
 .contacts__address {

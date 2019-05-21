@@ -15,6 +15,16 @@
   justify-content: space-between;
 }
 
+// styleguide
+.socials-list a:hover {
+  fill: #62d1ba;
+}
+
+.socials-list a:active {
+  fill: #62d1ba;
+  opacity: 0.3;
+}
+
 .socials-list-button {
   display: block;
   height: 50px;
