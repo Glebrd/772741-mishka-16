@@ -514,7 +514,7 @@ input[type="checkbox"]:checked + .order__color-checkbox::before {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    width: 100%;
+    // width: 100%;
   }
 
   .order__type {
@@ -541,7 +541,7 @@ input[type="checkbox"]:checked + .order__color-checkbox::before {
   }
 
   .order__color-title {
-    margin-left: 51px;
+    margin-left: 2px;
     padding-top: 0;
     margin-top: 63px;
   }
@@ -572,7 +572,7 @@ input[type="checkbox"]:checked + .order__color-checkbox::before {
 
   .order__name {
     margin-top: 0;
-    margin-bottom: 34px;
+    margin-bottom: 32px;
   }
 
   .order__name-flex {
@@ -625,7 +625,7 @@ input[type="checkbox"]:checked + .order__color-checkbox::before {
   }
 
   .order__phone-title {
-    margin-left: 52px;
+    margin-left: 2px;
     margin-top: 70px;
   }
 
@@ -651,7 +651,6 @@ input[type="checkbox"]:checked + .order__color-checkbox::before {
   }
 
   .order__email-title {
-    margin-left: 52px;
     margin-top: 18px;
   }
 
@@ -683,7 +682,7 @@ input[type="checkbox"]:checked + .order__color-checkbox::before {
 
   .order__additional-text {
     max-width: 500px;
-    margin-top: 42px;
+    margin-top: 45px;
     margin-left: 128px;
     font-size: 19px;
   }
@@ -730,6 +729,10 @@ input[type="checkbox"]:checked + .order__color-checkbox::before {
     }
   }
 
+  .order__field-flex {
+    max-width: 1150px;
+  }
+
   .order__info {
     margin-top: 105px;
     padding-left: 225px;
@@ -751,7 +754,7 @@ input[type="checkbox"]:checked + .order__color-checkbox::before {
   }
 
   .order__color-title {
-    margin-left: 110px;
+    margin-left: 62px;
     margin-top: 65px;
   }
 
@@ -782,7 +785,7 @@ input[type="checkbox"]:checked + .order__color-checkbox::before {
   }
 
   .order__phone-title {
-    margin-left: 112px;
+    margin-left: 62px;
   }
 
   .order__phone-flex {
@@ -795,7 +798,7 @@ input[type="checkbox"]:checked + .order__color-checkbox::before {
   }
 
   .order__email-title {
-    margin-left: 112px;
+    margin-left: 62px;
   }
 
   .order__email-flex {
