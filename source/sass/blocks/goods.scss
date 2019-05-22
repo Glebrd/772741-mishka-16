@@ -123,16 +123,6 @@
     margin-top: 79px;
   }
 
-  .goods__item:last-child {
-    margin-right: auto;
-    margin-left: 50px;
-  }
-
-  .goods__item:nth-child(3n) {
-    margin-left: 0;
-  }
-
-
   .goods__item {
     display: flex;
     margin-bottom: 54px;
@@ -201,9 +191,17 @@
     margin-bottom: 5px;
   }
 
+
   .goods__item {
     flex-direction: column;
+    margin-right: 50px;
+    height: 659px;
   }
+
+  .goods__item:nth-child(3n) {
+    margin-right: 0;
+  }
+
 
   .goods__img {
     width: 316px;
