@@ -35,7 +35,6 @@ header {
   top: 30px;
   left: 31px;
   opacity: 0.2;
-  // fill: rgb(0, 0, 0);
 }
 
 
@@ -112,6 +111,7 @@ header {
     cursor: pointer;
     border: none;
     background-color: transparent;
+    font-size: 0;
   }
 
   .header__site-navigation--closed .header__burger-menu-btn::before {
@@ -147,7 +147,7 @@ header {
   }
 }
 
-// hovers styleguide
+//styleguide
 .header__site-navigation-list a:hover,
 .header__site-functions-list a:hover,
 .header__promos-list a:hover {
@@ -298,7 +298,6 @@ header {
   }
 
   .header__site-navigation-link--knitting {
-    // padding-left: 18px;
     margin-left: 35px;
     padding-top: 0;
     display: block;
@@ -336,8 +335,6 @@ header {
     padding-right: 25px;
   }
 
-  // .header__site-navigation-item--catalog {}
-
   .header__promos-link {
     padding-top: 3px;
     color: $color;
@@ -354,16 +351,6 @@ header {
     margin-left: 0;
   }
 
-  // .site-navigation__link--catalog {
-  //   padding-top: 0;
-  //   display: block;
-  //   margin-top: 0;
-  //   min-height: 92px;
-  //   padding-left: 20px;
-  //   padding-right: 37px;
-  //   // min-width: 205px;
-  // }
-
   .header__site-navigation-link--catalog {
     padding-top: 0;
     display: block;
@@ -371,7 +358,6 @@ header {
     min-height: 92px;
     padding-left: 20px;
     padding-right: 37px;
-    // min-width: 205px;
   }
 
   .header__site-navigation-item--knitting {

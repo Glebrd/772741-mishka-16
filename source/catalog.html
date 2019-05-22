@@ -47,7 +47,7 @@
   <div style="display: none;">
     <include src="build/img/sprite.svg"></include>
   </div>
-  <header class="header index__index">
+  <header class="header index__header">
     <nav class="header__site-navigation header__site-navigation--opened">
       <a class="header__logo logo" href="index.html">
         <picture>
@@ -56,36 +56,43 @@
           <img src="img/logo-mobile.svg" alt="Магазин Мишка - логотип">
         </picture>
       </a>
-      <button class="header__burger-menu-btn"></button>
+      <button class="header__burger-menu-btn">Показать/скрыть меню</button>
       <ul class="header__site-navigation-list">
-        <li class="header__site-navigation-item header__site-navigation-item--catalog"><a href="catalog.html"
-            class="header__site-navigation-link header__site-navigation-link--catalog">Каталог
-            товаров</a></li>
-        <li class="header__site-navigation-item header__site-navigation-item--knitting"><a href="form.html"
-            class="header__site-navigation-link header__site-navigation-link--knitting">Вязание
-            на заказ</a></li>
+        <li class="header__site-navigation-item header__site-navigation-item--catalog">
+          <a href="catalog.html" class="header__site-navigation-link header__site-navigation-link--catalog">Каталог
+            товаров</a>
+        </li>
+        <li class="header__site-navigation-item header__site-navigation-item--knitting">
+          <a href="form.html" class="header__site-navigation-link header__site-navigation-link--knitting">Вязание на
+            заказ</a>
+        </li>
       </ul>
       <ul class="header__site-functions-list">
-        <li class="header__site-functions-item header__site-functions-item--search"><a href="#"
-            class="header__site-functions-link header__site-functions-link--search">
-            <svg class="header__site-functions-link-icon header__site-functions-link-icon--search" width="18" height="18">
+        <li class="header__site-functions-item header__site-functions-item--search">
+          <a href="search-results.html" class="header__site-functions-link header__site-functions-link--search">
+            <svg class="header__site-functions-link-icon header__site-functions-link-icon--search" width="18"
+              height="18">
               <use xlink:href="#icon-search"></use>
-            </svg>Поиск по сайту</a></li>
-        <li class="header__site-functions-item header__site-functions-item--cart"><a href="#"
-            class="header__site-functions-link header__site-functions-link--cart">
+            </svg>
+            Поиск по сайту</a>
+        </li>
+        <li class="header__site-functions-item header__site-functions-item--cart">
+          <a href="cart.html" class="header__site-functions-link header__site-functions-link--cart">
             <svg class="header__site-functions-link-icon header__site-functions-link-icon--cart" width="21" height="18">
               <use xlink:href="#icon-cart"></use>
-            </svg>Корзина: пока пуста</a></li>
+            </svg>Корзина: пока пуста</a>
+        </li>
       </ul>
       <ul class="header__promos-list">
         <li class="header__promos-item header__promos-item--new-arrivals">
-          <a href="#" class="header__promos-link header__promos-link--new-arrivals">Новые поступления</a>
+          <a href="new-arrivals.html" class="header__promos-link header__promos-link--new-arrivals">Новые
+            поступления</a>
         </li>
         <li class="header__promos-item header__promos-item--sale">
-          <a href="#" class="header__promos-link header__promos-link--sale">Распродажа</a>
+          <a href="sale.html" class="header__promos-link header__promos-link--sale">Распродажа</a>
         </li>
       </ul>
-      <a href="#" class="header__delivery">Бесплатная доставка по России</a>
+      <a href="delivery.html" class="header__delivery">Бесплатная доставка по России</a>
     </nav>
   </header>
   <main>
@@ -114,7 +121,7 @@
             </a>
             <p class="goods__info">Рост 30 см, вес 200 г</p>
             <span class="goods__price">1 200 руб.</span>
-            <a href="#" class="goods__cart-link">
+            <a href="cart-add-hare.html" class="goods__cart-link">
               <svg class="goods__cart-icon" width="21" height="18">
                 <use xlink:href="#icon-cart"></use>
               </svg></a>
@@ -142,7 +149,7 @@
             </a>
             <p class="goods__info">Диаметр 15 см, высота 10 см</p>
             <span class="goods__price">690 руб.</span>
-            <a href="#" class="goods__cart-link">
+            <a href="cart-add-bowl.html" class="goods__cart-link">
               <svg class="goods__cart-icon" width="21" height="18">
                 <use xlink:href="#icon-cart"></use>
               </svg></a>
@@ -171,7 +178,7 @@
             </a>
             <p class="goods__info">Диаметр 30 см, высота 30 см</p>
             <span class="goods__price">1 500 руб.</span>
-            <a href="#" class="goods__cart-link">
+            <a href="cart-add-toys-bowl.html" class="goods__cart-link">
               <svg class="goods__cart-icon" width="21" height="18">
                 <use xlink:href="#icon-cart"></use>
               </svg></a>
@@ -180,21 +187,19 @@
       </ul>
     </section>
     <section class="production-process">
-
       <h2 class="production-process__header">
         <svg class="production-process__icon" width="32" height="32">
           <use xlink:href="#icon-video"></use>
         </svg>
         Процесс производства</h2>
-
-      <div class="production-process__video-container"><button class="production-process__play-btn"></button></div>
+      <div class="production-process__video-container">
+        <button class="production-process__play-btn"></button>
+      </div>
       <div class="production-process__text-wrap">
         <p class="production-process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о
-          том,
-          как появляются наши товары.</p>
-        <a href="#" class="button production-process__btn">Сделать заказ</a>
+          том, как появляются наши товары.</p>
+        <a href="place-order.html" class="button production-process__btn">Сделать заказ</a>
       </div>
-
     </section>
     <section class="modal">
       <h2 class="modal__title">Добавить в корзину</h2>
@@ -202,15 +207,21 @@
       <ul class="modal__size-list">
         <li class="modal__size-item">
           <label for="small" class="modal__button">
-            <input type="radio" class="visually-hidden" name="item-size" id="small" checked><span>S</span></label>
+            <input type="radio" class="visually-hidden" name="item-size" id="small" checked>
+            <span>S</span>
+          </label>
         </li>
         <li class="modal__size-item">
-                    <label for="medium" class="modal__button">
-            <input type="radio" class="visually-hidden" name="item-size" id="medium"><span>M</span></label></li>
+          <label for="medium" class="modal__button">
+            <input type="radio" class="visually-hidden" name="item-size" id="medium">
+            <span>M</span>
+          </label>
+        </li>
         <li class="modal__size-item">
-
           <label for="large" class="modal__button">
-            <input type="radio" class="visually-hidden" name="item-size" id="large"><span>L</span></label>
+            <input type="radio" class="visually-hidden" name="item-size" id="large">
+            <span>L</span>
+          </label>
         </li>
       </ul>
       <a class="modal__order-button button">Добавить</a>
@@ -223,30 +234,35 @@
       </svg>
       <ul class="socials-list">
         <li class="socials-list-item">
-          <a href="#" aria-label="Мы в Инстаграме" class="socials-list-button socials-list-button--instagram"> <svg
-              class="socials-list-item-icon" width="22" height="21">
+          <a href="#" aria-label="Мы в Инстаграме" class="socials-list-button socials-list-button--instagram">
+            <svg class="socials-list-item-icon" width="22" height="21">
               <use xlink:href="#icon-insta"></use>
-            </svg></a>
+            </svg>
+          </a>
         </li>
         <li class="socials-list-item">
-          <a href="#" aria-label="Мы в Фэйсбуке" class="socials-list-button socials-list-button--facebook"><svg
-              class="socials-list__item-icon" width="15" height="28">
+          <a href="#" aria-label="Мы в Фэйсбуке" class="socials-list-button socials-list-button--facebook">
+            <svg class="socials-list__item-icon" width="15" height="28">
               <use xlink:href="#icon-fb"></use>
-            </svg></a>
+            </svg>
+          </a>
         </li>
         <li class="socials-list-item">
-          <a href="#" aria-label="Мы в Твиттере" class="socials-list-button socials-list-button--twitter"><svg
-              class="socials-list-item-icon" width="23" height="20">
+          <a href="#" aria-label="Мы в Твиттере" class="socials-list-button socials-list-button--twitter">
+            <svg class="socials-list-item-icon" width="23" height="20">
               <use xlink:href="#icon-twitter"></use>
-            </svg></a>
+            </svg>
+          </a>
         </li>
       </ul>
       <div class="footer__developer">
         <a class="footer__developer-about" href="https://htmlacademy.ru/intensive/adaptive"
-          aria-label="Ссылка на лендинг интенсива «Профессиональный HTML и CSS, уровень 2»"><span
-            class="footer__developer-text">Разработано</span><svg class="footer__developer-logo" width="27" height="34">
+          aria-label="Ссылка на лендинг интенсива «Профессиональный HTML и CSS, уровень 2»">
+          <span class="footer__developer-text">Разработано</span><svg class="footer__developer-logo" width="27"
+            height="34">
             <use xlink:href="#icon-logo-htmlacademy"></use>
-          </svg></a>
+          </svg>
+        </a>
       </div>
     </div>
   </footer>

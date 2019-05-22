@@ -41,7 +41,11 @@
   margin-bottom: 20px;
 }
 
-.order__form {
+// .order__form {
+//   @include wrapper;
+// }
+
+.order__field-flex {
   @include wrapper;
 }
 
@@ -97,10 +101,6 @@ input[type="radio"] + .order__type-radio::before {
   border-radius: 50%;
   top: -9px;
   left: -13px;
-  // opacity: 0.5;
-  // &:hover{
-  //   box-shadow: 0 0 0 2px #62d1ba inset;
-  // }
 }
 
 input[type="radio"]:checked + .order__type-radio::before {
@@ -196,7 +196,7 @@ input[type="checkbox"]:checked + .order__color-checkbox::before {
 .order__name-input {
   display: block;
   margin-left: 0;
-  margin-top: 22px;
+  margin-top: 23px;
 }
 
 
@@ -204,18 +204,11 @@ input[type="checkbox"]:checked + .order__color-checkbox::before {
 .order__last-name,
 .order__middle-name {
   display: block;
-  // margin-top: 3px;
   border: 0;
   border-bottom: 2px solid #444444;
-  // line-height: 40px;
   width: 100%;
-  // margin-bottom: 10px;
   padding-bottom: 16px;
   padding-top: 16px;
-
-  // &:invalid {
-  //   border-bottom: 2px solid #ff0000;
-  // }
 
   &:hover {
     border-bottom: 2px solid #62d1ba;
@@ -254,21 +247,11 @@ input[type="checkbox"]:checked + .order__color-checkbox::before {
   margin-top: 10px;
   border: 0;
   border-bottom: 2px solid #444444;
-  // line-height: 40px;
   padding-bottom: 15px;
   padding-top: 10px;
   width: 100%;
   margin-bottom: 25px;
   position: relative;
-  // &::after{
-  //   @include pseudo;
-  //   width: 25px;
-  //   height: 24px;
-  //   bottom: 0;
-  //   right: 0;
-  //   background-image: url("../img/icon-phone.svg");
-  //   background-repeat: no-repeat;
-  // }
 
   &:hover {
     border-bottom: 2px solid #62d1ba;
@@ -316,7 +299,6 @@ input[type="checkbox"]:checked + .order__color-checkbox::before {
   margin-top: 4px;
   border: 0;
   border-bottom: 2px solid #444444;
-  // line-height: 40px;
   padding-bottom: 15px;
   padding-top: 10px;
   width: 100%;
@@ -357,6 +339,7 @@ input[type="checkbox"]:checked + .order__color-checkbox::before {
   margin-top: 22px;
   border: 2px solid #444444;
   width: 100%;
+  max-width: 300px;
   min-height: 142px;
   padding: 16px;
 
@@ -532,13 +515,11 @@ input[type="checkbox"]:checked + .order__color-checkbox::before {
     flex-direction: row;
     justify-content: flex-start;
     width: 100%;
-    // padding: 15px;
   }
 
   .order__type {
     padding: 15px;
     margin: 0;
-    // padding-left: 195px;
     font-size: 19px;
     position: relative;
   }
@@ -553,7 +534,6 @@ input[type="checkbox"]:checked + .order__color-checkbox::before {
     padding-bottom: 25px;
     display: flex;
     flex-wrap: wrap;
-    // width: 50%;
   }
 
   .order__color-item {
@@ -592,7 +572,7 @@ input[type="checkbox"]:checked + .order__color-checkbox::before {
 
   .order__name {
     margin-top: 0;
-    margin-bottom: 38px;
+    margin-bottom: 34px;
   }
 
   .order__name-flex {
@@ -657,7 +637,6 @@ input[type="checkbox"]:checked + .order__color-checkbox::before {
 
   .order__phone-number {
     margin-top: 0;
-    // line-height: 50px;
     font-size: 19px;
     padding-left: 17px;
     background-color: #f1f1f1;
@@ -684,7 +663,6 @@ input[type="checkbox"]:checked + .order__color-checkbox::before {
 
   .order__email-address {
     margin-top: 0;
-    // line-height: 50px;
     font-size: 19px;
     padding-left: 17px;
     background-color: #f1f1f1;
@@ -704,7 +682,7 @@ input[type="checkbox"]:checked + .order__color-checkbox::before {
   }
 
   .order__additional-text {
-    width: 500px;
+    max-width: 500px;
     margin-top: 42px;
     margin-left: 128px;
     font-size: 19px;
@@ -836,7 +814,7 @@ input[type="checkbox"]:checked + .order__color-checkbox::before {
 
   .order__additional-text {
     margin-left: 72px;
-    width: 700px;
+    max-width: 700px;
   }
 
   .order__button {
