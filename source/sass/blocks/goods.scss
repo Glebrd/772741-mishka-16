@@ -123,6 +123,16 @@
     margin-top: 79px;
   }
 
+  .goods__item:last-child {
+    margin-right: auto;
+    margin-left: 50px;
+  }
+
+  .goods__item:nth-child(3n) {
+    margin-left: 0;
+  }
+
+
   .goods__item {
     display: flex;
     margin-bottom: 54px;
