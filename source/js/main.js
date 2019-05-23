@@ -1,17 +1,17 @@
-var navMain = document.querySelector('.header__site-navigation');
+var navMain = document.querySelector(".header__site-navigation");
 
-var navToggle = document.querySelector('.header__burger-menu-btn');
+var navToggle = document.querySelector(".header__burger-menu-btn");
 
-navMain.classList.remove('header__site-navigation--opened');
-navMain.classList.add('header__site-navigation--closed');
+navMain.classList.remove("header__site-navigation--opened");
+navMain.classList.add("header__site-navigation--closed");
 
-navToggle.addEventListener('click', function () {
-  if (navMain.classList.contains('header__site-navigation--closed')) {
-    navMain.classList.remove('header__site-navigation--closed');
-    navMain.classList.add('header__site-navigation--opened');
+navToggle.addEventListener("click", function () {
+  if (navMain.classList.contains("header__site-navigation--closed")) {
+    navMain.classList.remove("header__site-navigation--closed");
+    navMain.classList.add("header__site-navigation--opened");
   } else {
-    navMain.classList.add('header__site-navigation--closed');
-    navMain.classList.remove('header__site-navigation--opened');
+    navMain.classList.add("header__site-navigation--closed");
+    navMain.classList.remove("header__site-navigation--opened");
   }
 });
 
@@ -38,19 +38,19 @@ var overlay = document.querySelector(".overlay");
 // }
 
 
-  for (var i = 0; i < link.length; i++) {
-    link[i].addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.add("modal--show");
-    overlay.classList.add("overlay--show");
-    })}
+for (var i = 0; i < link.length; i++) {
+  link[i].addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup.classList.add("modal--show");
+  overlay.classList.add("overlay--show");
+  })}
 
-    for (var i = 0; i < link.length; i++) {
-      overlay.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.remove("modal--show");
-      overlay.classList.remove("overlay--show");
-      })}
+for (var i = 0; i < link.length; i++) {
+  overlay.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup.classList.remove("modal--show");
+  overlay.classList.remove("overlay--show");
+  })}
 
 // вызов модального окна на главной странице
 
