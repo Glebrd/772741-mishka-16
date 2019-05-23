@@ -126,13 +126,8 @@ img.deal-of-the-week__picture {
   }
 
   .deal-of-the-week__features-definition {
-    padding-left: 25px;
+    padding-left: 0;
   }
-
-  .deal-of-the-week__features-table .deal-of-the-week__description {
-    width: 290px;
-  }
-
 
   .deal-of-the-week__text {
     font-size: 17px;
@@ -153,9 +148,9 @@ img.deal-of-the-week__picture {
 
   .deal-of-the-week__price {
     font-size: 20px;
-    margin-top: 34px;
+    margin-top: 33px;
     margin-left: 0;
-    padding-left: 70px;
+    padding-left: 72px;
     text-align: left;
   }
 
@@ -165,7 +160,7 @@ img.deal-of-the-week__picture {
     margin-left: -3px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 14px;
+    padding-top: 16px;
     text-align: center;
   }
 
@@ -180,7 +175,6 @@ img.deal-of-the-week__picture {
     background: url("../img/bg-zigzag-line.svg") -40px 5px;
     background-repeat: repeat-x;
     background-size: auto 15.5px;
-    // transform: rotate(180deg);
   }
 }
 
@@ -204,7 +198,8 @@ img.deal-of-the-week__picture {
 
   .deal-of-the-week__price {
     margin-left: 182px;
-    margin-top: 89px;
+    margin-top: 87.5px;
+    padding-left: 68px;
   }
 
   a.deal-of-the-week__btn {

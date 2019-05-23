@@ -6,8 +6,6 @@
   display: flex;
 
   @include list-reset;
-  // margin-left: 56px;
-  // margin-top: 26px;
   margin: 16px 28px 26px 28px;
   padding-left: 15px;
   padding-right: 20px;
@@ -32,15 +30,11 @@
 }
 
 .socials-list-button--instagram {
-  // width: 42px;
-  // height: 41px;
   display: block;
   padding: 14px;
 }
 
 .socials-list-button--facebook {
-  // width: 35px;
-  // height: 48px;
   display: block;
   padding-right: 17px;
   padding-left: 17px;
@@ -49,8 +43,6 @@
 }
 
 .socials-list-button--twitter {
-  // width: 23px;
-  // height: 20px;
   display: block;
   padding-left: 15px;
   padding-right: 15px;
