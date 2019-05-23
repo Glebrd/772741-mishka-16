@@ -130,10 +130,20 @@ input[type="radio"]:checked + .order__type-radio::before {
   box-shadow: 0 0 0 2px #62d1ba inset;
 }
 
+input[type="radio"] + .order__type-radio:focus::before {
+  box-shadow: 0 0 0 2px #62d1ba inset;
+}
+
 .order__type-item:hover input[type="radio"]:checked + .order__type-radio::before {
   box-shadow:
     0 0 0 2px #62d1ba inset,
     0 0 0 12px white inset;
+}
+
+input[type="radio"]:disabled + .order__type-radio::before {
+  background-color: rgba(68, 68, 68, 0.2);
+  box-shadow:
+  0 0 0 2px rgba(68, 68, 68, 0.2) inset;
 }
 
 .order__type-item:active input[type="radio"] + .order__type-radio::before {
@@ -167,6 +177,11 @@ input[type="checkbox"]:checked + .order__color-checkbox::before {
   background-size: 22px 16px;
   background-repeat: no-repeat;
   background-position: 9px 11px;
+}
+
+input[type="checkbox"]:disabled + .order__color-checkbox::before {
+  background-color: rgba(68, 68, 68, 0.1);
+  border: 2px solid rgba(68, 68, 68, 0.1);
 }
 
 // styleguide
@@ -340,8 +355,21 @@ input[type="checkbox"]:checked + .order__color-checkbox::before {
   margin-top: 10px;
 }
 
+.order__additional-flex {
+  position: relative;
+}
+
 .order__additional-title {
   margin-left: 0;
+
+  &::after {
+    @include pseudo;
+    height: 1px;
+    width: 198px;
+    background-color: #63d1bb;
+    top: 6px;
+    left: 92px;
+  }
 }
 
 .order__additional-text {
@@ -493,7 +521,6 @@ input[type="checkbox"]:checked + .order__color-checkbox::before {
       0 0 0 15px white inset;
   }
 
-  /*А так можно?*/
   .order__color {
     padding: 0;
     margin-left: -50px;
@@ -515,7 +542,8 @@ input[type="checkbox"]:checked + .order__color-checkbox::before {
   .order__color-title::after,
   .order__name-title::after,
   .order__phone-title::after,
-  .order__email-title::after {
+  .order__email-title::after,
+  .order__additional-title::after {
     display: none;
   }
 

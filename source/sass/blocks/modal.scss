@@ -86,9 +86,10 @@
   font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
-  padding: 18px 30px;
+  padding: 18px 31px;
   text-align: center;
   cursor: pointer;
+  border: none;
 }
 
 @include tablet-up {
