@@ -9,6 +9,7 @@
 .order__type {
   padding-left: 0;
   padding-right: 0;
+  margin: 0;
 }
 
 .order__color {
@@ -387,10 +388,6 @@ input[type="checkbox"]:checked + .order__color-checkbox::before {
 
 // ДОБАВЛЕНО ДЛЯ АДАПТИВА
 
-.order__type {
-  margin: 0;
-}
-
 .order__type-list,
 .order__color-list {
   @include list-reset;
@@ -583,7 +580,7 @@ input[type="checkbox"]:checked + .order__color-checkbox::before {
     margin-bottom: 32px;
   }
 
-  .order__name-item:last-child .order__name-input{
+  .order__name-item:last-child .order__name-input {
     margin-top: 20px;
   }
 
@@ -763,6 +760,7 @@ input[type="checkbox"]:checked + .order__color-checkbox::before {
     padding-bottom: 12px;
     padding-top: 5px;
   }
+
   .order__type-list {
     margin-left: 104px;
     margin-top: 19px;
