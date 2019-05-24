@@ -1,6 +1,7 @@
 .about-us {
 
   padding-top: 22px;
+
   @include wrapper;
   font-family: $font;
 }
@@ -22,10 +23,10 @@
   padding-right: 10px;
 }
 
-.about-us__item:last-child{
+.about-us__item:last-child {
   padding-top: 62px;
 
-  & .about-us__item-icon{
+  & .about-us__item-icon {
     top: 10px;
     left: 5px;
   }
@@ -48,6 +49,7 @@
   top: 12px;
   left: 1px;
 }
+
 .about-us__item:nth-child(5) .about-us__item-icon {
   top: 12px;
   left: -5px;

@@ -7,6 +7,7 @@
   font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
+
   &:hover {
     color: #ffffff;
     background-color: #444444;
@@ -18,7 +19,7 @@
   }
 
   &:disabled {
-    color:  #ffffff;
+    color: #ffffff;
     background-color: rgba($color: #444444, $alpha: 0.7);
   }
 }

@@ -146,8 +146,7 @@ input[type="radio"]:checked + .order__type-radio::before {
 
 input[type="radio"]:disabled + .order__type-radio::before {
   background-color: rgba(68, 68, 68, 0.2);
-  box-shadow:
-  0 0 0 2px rgba(68, 68, 68, 0.2) inset;
+  box-shadow: 0 0 0 2px rgba(68, 68, 68, 0.2) inset;
 }
 
 .order__color-checkbox {
@@ -179,7 +178,8 @@ input[type="checkbox"]:disabled + .order__color-checkbox::before {
 }
 
 .order__color-item:hover input[type="checkbox"] + .order__color-checkbox::before,
-.order__color-item:hover input[type="checkbox"]:checked + .order__color-checkbox::before, input[type="checkbox"]:focus + .order__color-checkbox::before {
+.order__color-item:hover input[type="checkbox"]:checked + .order__color-checkbox::before,
+input[type="checkbox"]:focus + .order__color-checkbox::before {
   border: 2px solid #62d1ba;
 }
 
@@ -510,7 +510,8 @@ input[type="checkbox"]:disabled + .order__color-checkbox::before {
   }
 
   // styleguide
-  .order__type-item:hover input[type="radio"]:checked + .order__type-radio::before, input[type="radio"]:focus + .order__type-radio::before {
+  .order__type-item:hover input[type="radio"]:checked + .order__type-radio::before,
+  input[type="radio"]:focus + .order__type-radio::before {
     box-shadow:
       0 0 0 2px #62d1ba inset,
       0 0 0 15px white inset;
