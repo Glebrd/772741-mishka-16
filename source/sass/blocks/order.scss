@@ -144,6 +144,11 @@ input[type="radio"]:checked + .order__type-radio::before {
     0 0 0 15px white inset;
 }
 
+input[type="radio"]:disabled + .order__type-radio::before {
+  background-color: rgba(68, 68, 68, 0.2);
+  box-shadow: 0 0 0 2px rgba(68, 68, 68, 0.2) inset;
+}
+
 .order__color-checkbox {
   margin-top: 13px;
   margin-bottom: 43px;
@@ -167,10 +172,14 @@ input[type="checkbox"]:checked + .order__color-checkbox::before {
   background-position: 9px 11px;
 }
 
-// styleguide
+input[type="checkbox"]:disabled + .order__color-checkbox::before {
+  background-color: rgba(68, 68, 68, 0.1);
+  border: 2px solid rgba(68, 68, 68, 0.1);
+}
 
 .order__color-item:hover input[type="checkbox"] + .order__color-checkbox::before,
-.order__color-item:hover input[type="checkbox"]:checked + .order__color-checkbox::before {
+.order__color-item:hover input[type="checkbox"]:checked + .order__color-checkbox::before,
+input[type="checkbox"]:focus + .order__color-checkbox::before {
   border: 2px solid #62d1ba;
 }
 
@@ -345,8 +354,21 @@ input[type="checkbox"]:checked + .order__color-checkbox::before {
   margin-top: 10px;
 }
 
+.order__additional-flex {
+  position: relative;
+}
+
 .order__additional-title {
   margin-left: 0;
+
+  &::after {
+    @include pseudo;
+    height: 1px;
+    width: 198px;
+    background-color: #63d1bb;
+    top: 6px;
+    left: 92px;
+  }
 }
 
 .order__additional-text {
@@ -488,7 +510,8 @@ input[type="checkbox"]:checked + .order__color-checkbox::before {
   }
 
   // styleguide
-  .order__type-item:hover input[type="radio"]:checked + .order__type-radio::before {
+  .order__type-item:hover input[type="radio"]:checked + .order__type-radio::before,
+  input[type="radio"]:focus + .order__type-radio::before {
     box-shadow:
       0 0 0 2px #62d1ba inset,
       0 0 0 15px white inset;
@@ -511,7 +534,8 @@ input[type="checkbox"]:checked + .order__color-checkbox::before {
   .order__color-title::after,
   .order__name-title::after,
   .order__phone-title::after,
-  .order__email-title::after {
+  .order__email-title::after,
+  .order__additional-title::after {
     display: none;
   }
 

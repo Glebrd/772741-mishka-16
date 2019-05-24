@@ -53,6 +53,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   border: 0;
+  font-size: 0;
 
   &:hover {
     transform: scale(1.2, 1.2);
@@ -79,12 +80,12 @@
   width: 196px;
 }
 
-.production-process:hover {
+.production-process:hover .production-process__text-wrap {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
   border: 1px solid #ececec;
 }
 
-.production-process__btn:active {
+.production-process__btn:active .production-process__text-wrap {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   border: 1px solid #ececec;
 }
@@ -144,6 +145,8 @@
     width: 1050px;
     min-width: 1050px;
     max-width: 1050px;
+    min-height: 455px;
+    margin-bottom: 100px;
   }
 
   .production-process__video-container {

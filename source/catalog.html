@@ -14,7 +14,7 @@
   <div style="display: none;">
     <include src="build/img/sprite.svg"></include>
   </div>
-  <header class="header index__header">
+  <header class="header catalog__header">
     <nav class="header__site-navigation header__site-navigation--opened">
       <a class="header__logo logo" href="index.html">
         <picture>
@@ -87,12 +87,12 @@
             <p class="goods__info">Рост 30 см, вес 200 г</p>
             <span class="goods__price">1 200 руб.</span>
             <a href="cart-add-hare.html" class="goods__cart-link">
+              Добавить в корзину
               <svg class="goods__cart-icon" width="21" height="18">
                 <use xlink:href="#icon-cart"></use>
               </svg></a>
           </div>
         </li>
-
         <li class="goods__item">
           <a href="catalog.html/bowl" class="goods__link">
             <picture>
@@ -116,6 +116,7 @@
             <p class="goods__info">Диаметр 15 см, высота 10 см</p>
             <span class="goods__price">690 руб.</span>
             <a href="cart-add-bowl.html" class="goods__cart-link">
+              Добавить в корзину
               <svg class="goods__cart-icon" width="21" height="18">
                 <use xlink:href="#icon-cart"></use>
               </svg></a>
@@ -145,6 +146,7 @@
             <p class="goods__info">Диаметр 30 см, высота 30 см</p>
             <span class="goods__price">1 500 руб.</span>
             <a href="cart-add-toys-bowl.html" class="goods__cart-link">
+              Добавить в корзину
               <svg class="goods__cart-icon" width="21" height="18">
                 <use xlink:href="#icon-cart"></use>
               </svg></a>
@@ -159,7 +161,7 @@
         </svg>
         Процесс производства</h2>
       <div class="production-process__video-container">
-        <button class="production-process__play-btn"></button>
+        <button class="production-process__play-btn">Воспроизвести видео о процессе производства</button>
       </div>
       <div class="production-process__text-wrap">
         <p class="production-process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о
@@ -174,19 +176,19 @@
         <li class="modal__size-item">
           <label for="small" class="modal__button">
             <input type="radio" class="visually-hidden" name="item-size" id="small" checked>
-            <span>S</span>
+            <span aria-label="Маленький размер">S</span>
           </label>
         </li>
         <li class="modal__size-item">
           <label for="medium" class="modal__button">
             <input type="radio" class="visually-hidden" name="item-size" id="medium">
-            <span>M</span>
+            <span aria-label="Средний размер">M</span>
           </label>
         </li>
         <li class="modal__size-item">
           <label for="large" class="modal__button">
             <input type="radio" class="visually-hidden" name="item-size" id="large">
-            <span>L</span>
+            <span aria-label="Большой размер">L</span>
           </label>
         </li>
       </ul>
@@ -195,9 +197,11 @@
   </main>
   <footer class="footer catalog__footer">
     <div class="footer__wrapper">
-      <svg class="footer__logo" width="102" height="34">
-        <use xlink:href="#icon-logo-footer"></use>
-      </svg>
+      <a href="index.html" class="footer__link">
+        <svg class="footer__logo" width="102" height="34">
+          <use xlink:href="#icon-logo-footer"></use>
+        </svg>
+      </a>
       <ul class="socials-list">
         <li class="socials-list-item">
           <a href="#" aria-label="Мы в Инстаграме" class="socials-list-button socials-list-button--instagram">

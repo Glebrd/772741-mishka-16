@@ -1,4 +1,4 @@
-header {
+.header {
   border-bottom: 1px solid #ececec;
   min-height: 55px;
 }
@@ -105,13 +105,17 @@ header {
     top: 5px;
     right: 31px;
     z-index: 2;
-    display: block;
     width: 20px;
     height: 20px;
     cursor: pointer;
     border: none;
     background-color: transparent;
     font-size: 0;
+    display: none;
+  }
+
+  .header__burger-menu-btn--shown {
+    display: block;
   }
 
   .header__site-navigation--closed .header__burger-menu-btn::before {

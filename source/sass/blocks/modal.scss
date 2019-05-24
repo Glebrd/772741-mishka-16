@@ -78,6 +78,16 @@
   border: 2px solid rgba(68, 68, 68, 0.3);
 }
 
+.modal__button input[type="radio"]:disabled + span {
+  border: 2px solid rgba(68, 68, 68, 0.1);
+  background-color: rgba(68, 68, 68, 0.2);
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.modal__button input[type="radio"]:focus + span {
+  border: 2px solid rgba(68, 68, 68, 0.3);
+}
+
 .modal__order-button {
   margin-top: 30px;
   background-color: #63d1bb;
@@ -86,9 +96,15 @@
   font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
-  padding: 18px 30px;
+  padding: 18px 31px;
   text-align: center;
   cursor: pointer;
+  border: none;
+
+  &:focus {
+    color: #ffffff;
+    background-color: #444444;
+  }
 }
 
 @include tablet-up {

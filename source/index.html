@@ -17,7 +17,7 @@
 
   <header class="header index__index">
     <nav class="header__site-navigation header__site-navigation--opened">
-      <a class="header__logo logo" href="index.html">
+      <a class="header__logo logo" href="#">
         <picture>
           <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -46,7 +46,8 @@
       </ul>
       <ul class="header__promos-list">
         <li class="header__promos-item header__promos-item--new-arrivals">
-          <a href="#" class="header__promos-link header__promos-link--new-arrivals">Новые поступления</a>
+          <a href="new-arrivals.html" class="header__promos-link header__promos-link--new-arrivals">Новые
+            поступления</a>
         </li>
         <li class="header__promos-item header__promos-item--sale">
           <a href="#" class="header__promos-link header__promos-link--sale">Распродажа</a>
@@ -57,9 +58,11 @@
   </header>
   <main>
     <section class="products">
-      <h1 class="products__title">Милые штуки ручной работы&nbsp;для&nbsp;дома</h1>
-      <a href="interior.html" class="products-category products-category--interior">Предметы интерьера</a>
-      <a href="toy.html" class="products-category products-category--toy">Детские игрушки</a>
+      <div class="products__wrapper">
+        <h1 class="products__title">Милые штуки ручной работы&nbsp;для&nbsp;дома</h1>
+        <a href="interior.html" class="products__category products__category--interior">Предметы интерьера</a>
+        <a href="toys.html" class="products__category products__category--toy">Детские игрушки</a>
+      </div>
     </section>
     <section class="deal-of-the-week">
       <h2 class="deal-of-the-week__title">Вязаные корзинки</h2>
@@ -144,8 +147,8 @@
         стали более стильными, а также набирают больше лайков!</p>
       <span class="feedback__name">Анастасия Красильникова</span>
       <span class="feedback__tag">@misssssiskras</span>
-      <button class="feedback__btn feedback__btn--prev"></button><button
-        class="feedback__btn feedback__btn--next"></button>
+      <button class="feedback__btn feedback__btn--prev">Предыдущий отзыв</button><button
+        class="feedback__btn feedback__btn--next">Следующий отзыв</button>
       <a href="feedback.html" class="feedback__btn-write button">Написать</a>
     </section>
     <section class="contacts">
@@ -173,23 +176,25 @@
     <ul class="modal__size-list">
       <li class="modal__size-item">
         <label for="small" class="modal__button">
-          <input type="radio" class="visually-hidden" name="item-size" id="small" checked><span>S</span></label>
+          <input type="radio" class="visually-hidden" name="item-size" id="small" checked>
+          <span aria-label="Маленький размер">S</span>
+        </label>
       </li>
       <li class="modal__size-item">
         <label for="medium" class="modal__button">
-          <input type="radio" class="visually-hidden" name="item-size" id="medium"><span>M</span></label></li>
+          <input type="radio" class="visually-hidden" name="item-size" id="medium">
+          <span aria-label="Средний размер">M</span>
+        </label>
+      </li>
       <li class="modal__size-item">
 
         <label for="large" class="modal__button">
-          <input type="radio" class="visually-hidden" name="item-size" id="large"><span>L</span></label>
+          <input type="radio" class="visually-hidden" name="item-size" id="large">
+          <span aria-label="Большой размер">L</span>
+        </label>
       </li>
     </ul>
-    <a class="modal__order-button button">Добавить</a>
-    <!--
-      <button class="modal__button">S</button>
-      <button class="modal__button">M</button>
-      <button class="modal__button">L</button>
-      <a class="modal__order-button button">Добавить</button> -->
+    <a class="modal__order-button button" href="add-to-cart.html">Добавить</a>
   </section>
   <footer class="footer index__footer">
     <div class="footer__wrapper">

@@ -70,6 +70,7 @@
   bottom: 33px;
   right: 28px;
   opacity: 0.2;
+  font-size: 0;
 }
 
 .goods__link {
@@ -186,7 +187,6 @@
   .goods__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin-top: 131px;
     margin-bottom: 5px;
   }
@@ -195,7 +195,7 @@
   .goods__item {
     flex-direction: column;
     margin-right: 50px;
-    height: 659px;
+    min-height: 659px;
   }
 
   .goods__item:nth-child(3n) {
@@ -210,11 +210,14 @@
 
   .goods__price {
     margin-top: auto;
+    padding-top: 27px;
   }
 
   .goods__wrap {
+    height: 100%;
     min-height: 197px;
     width: 100%;
+    max-width: 318px;
     padding: 27px;
   }
 
