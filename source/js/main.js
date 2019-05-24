@@ -38,7 +38,6 @@ var overlay = document.querySelector(".overlay");
 
 // }
 
-
 for (var i = 0; i < link.length; i++) {
   link[i].addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -56,7 +55,6 @@ for (var i = 0; i < link.length; i++) {
 }
 
 // вызов модального окна на главной странице
-
 // var popup = document.querySelector(".modal");
 var deal = document.querySelector(".deal-of-the-week__btn");
 // var overlay = document.querySelector(".overlay");
