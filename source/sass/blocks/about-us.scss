@@ -45,14 +45,29 @@
   top: 14px;
 }
 
+.about-us__item:first-child .about-us__item-icon {
+  top: 11px;
+  left: 8px;
+}
+
 .about-us__item:nth-child(2) .about-us__item-icon {
   top: 12px;
   left: 1px;
 }
 
+.about-us__item:nth-child(4) .about-us__item-icon {
+  top: 11px;
+  left: 4px;
+}
+
 .about-us__item:nth-child(5) .about-us__item-icon {
   top: 12px;
-  left: -5px;
+  left: -6px;
+}
+
+.about-us__item:nth-child(6) .about-us__item-icon {
+  top: 9px;
+  left: 3px;
 }
 
 @include tablet-up {
@@ -81,6 +96,16 @@
     margin-left: -3px;
     margin-bottom: 40px;
   }
+
+  .about-us__item:nth-child(2) .about-us__item-icon {
+    top: 10px;
+    left: 1px;
+  }
+
+  .about-us__item:nth-child(5) .about-us__item-icon {
+    top: 12px;
+    left: -1px;
+  }
 }
 
 @include desktop-up {
@@ -94,5 +119,15 @@
     padding-left: 175px;
     font-size: 53px;
     margin-bottom: 38px;
+  }
+
+  .about-us__item:nth-child(4) .about-us__item-icon {
+    top: 13px;
+    left: 8px;
+  }
+
+  .about-us__item:nth-child(6) .about-us__item-icon {
+    top: 9px;
+    left: 7px;
   }
 }

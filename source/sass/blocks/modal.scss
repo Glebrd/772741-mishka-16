@@ -78,6 +78,16 @@
   border: 2px solid rgba(68, 68, 68, 0.3);
 }
 
+.modal__button input[type="radio"]:disabled + span {
+  border: 2px solid rgba(68, 68, 68, 0.1);
+  background-color: rgba(68, 68, 68, 0.2);
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.modal__button input[type="radio"]:focus + span {
+  border: 2px solid #63d1bb;
+}
+
 .modal__order-button {
   margin-top: 30px;
   background-color: #63d1bb;
@@ -90,6 +100,10 @@
   text-align: center;
   cursor: pointer;
   border: none;
+
+  &:focus {
+    border: 2px solid rgba(68, 68, 68, 0.5);
+  }
 }
 
 @include tablet-up {
