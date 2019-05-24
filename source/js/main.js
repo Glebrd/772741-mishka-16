@@ -4,6 +4,7 @@ var navToggle = document.querySelector(".header__burger-menu-btn");
 
 navMain.classList.remove("header__site-navigation--opened");
 navMain.classList.add("header__site-navigation--closed");
+navToggle.classList.add("header__burger-menu-btn--shown");
 
 navToggle.addEventListener("click", function () {
   if (navMain.classList.contains("header__site-navigation--closed")) {
@@ -40,17 +41,19 @@ var overlay = document.querySelector(".overlay");
 
 for (var i = 0; i < link.length; i++) {
   link[i].addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popup.classList.add("modal--show");
-  overlay.classList.add("overlay--show");
-  })}
+    evt.preventDefault();
+    popup.classList.add("modal--show");
+    overlay.classList.add("overlay--show");
+  })
+}
 
 for (var i = 0; i < link.length; i++) {
   overlay.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popup.classList.remove("modal--show");
-  overlay.classList.remove("overlay--show");
-  })}
+    evt.preventDefault();
+    popup.classList.remove("modal--show");
+    overlay.classList.remove("overlay--show");
+  })
+}
 
 // вызов модального окна на главной странице
 
@@ -58,13 +61,13 @@ for (var i = 0; i < link.length; i++) {
 var deal = document.querySelector(".deal-of-the-week__btn");
 // var overlay = document.querySelector(".overlay");
 
-deal.addEventListener("click", function (evt){
+deal.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal--show");
   overlay.classList.add("overlay--show");
 })
 
-overlay.addEventListener("click", function (evt){
+overlay.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.remove("modal--show");
   overlay.classList.remove("overlay--show");
