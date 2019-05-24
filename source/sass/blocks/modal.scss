@@ -85,7 +85,7 @@
 }
 
 .modal__button input[type="radio"]:focus + span {
-  border: 2px solid #63d1bb;
+  border: 2px solid rgba(68, 68, 68, 0.3);
 }
 
 .modal__order-button {
@@ -102,7 +102,8 @@
   border: none;
 
   &:focus {
-    border: 2px solid rgba(68, 68, 68, 0.5);
+    color: #ffffff;
+    background-color: #444444;
   }
 }
 
